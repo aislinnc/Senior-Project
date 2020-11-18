@@ -5,6 +5,11 @@ using UXF;
 
 public class FixationController : MonoBehaviour
 {
+    // Set the fixation point's global position
+    public void Start(){
+        transform.position = new Vector3(0.5f, 0.5f, 0f);
+    }
+    
     // Activates the fixation point for 1 second then deactivates it 
     IEnumerator Fixate(){
         Debug.Log("In Fixate coroutine");
