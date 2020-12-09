@@ -1,21 +1,8 @@
 timestamp,log_type,message
 0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-10.87038,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-11.87493,Warning,Warning: Session already exists! Continuing will overwrite
-15.01609,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-18.58924,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-19.20013,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-19.42988,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-19.61967,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-19.80119,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-20.00787,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-20.20107,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-20.3568,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-20.51587,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-20.66049,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-20.84853,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-21.02442,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-21.18119,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-21.34024,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-21.48462,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-21.62209,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
+6.087304,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+7.525359,Warning,Warning: Session already exists! Continuing will overwrite
+7.525359,Log,In Fixate coroutine
+19.93913,Log,In Fixate coroutine
+23.82001,Log,In Fixate coroutine
+28.82214,Log,In Fixate coroutine

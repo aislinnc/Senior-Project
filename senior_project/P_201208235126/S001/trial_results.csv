@@ -1,0 +1,6 @@
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time
+senior_project/P_201208235126/S001,senior_project,P_201208235126,1,1,1,1,1.725859,5.915398
+senior_project/P_201208235126/S001,senior_project,P_201208235126,1,2,1,2,5.915398,9.1412
+senior_project/P_201208235126/S001,senior_project,P_201208235126,1,3,1,3,9.1412,14.73349
+senior_project/P_201208235126/S001,senior_project,P_201208235126,1,4,1,4,14.73349,19.11745
+senior_project/P_201208235126/S001,senior_project,P_201208235126,1,5,1,5,19.11745,21.47659

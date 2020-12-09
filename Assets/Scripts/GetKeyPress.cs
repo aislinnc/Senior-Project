@@ -22,6 +22,7 @@ public class GetKeyPress : MonoBehaviour
 
         if(keyPressed == true){
             session.EndCurrentTrial();
+            session.BeginNextTrial();
         }
     }
 }
