@@ -5,31 +5,23 @@ using UXF;
 
 public class DotMotionController : MonoBehaviour
 {
-    // Set positions for the stimulus
-    static Vector3 lowerLeft = new Vector3 (0f, 2.5f, 2.5f);
-    static Vector3 upperLeft = new Vector3 (0f, 7.5f, 2.5f);
-    static Vector3 lowerRight = new Vector3 (0f, -2.5f, 2.5f);
-    static Vector3 upperRight = new Vector3 (0f, -2.5f, 7.5f);
-    static Vector3[] positions = {lowerLeft, upperLeft, lowerRight, upperRight};
-    public Vector3 pos;
+    public Session session;
+    // Stimulus position and size
+    private List<float> posList;
+    private Vector3 pos;
+    // Size
     Vector3 normScale = new Vector3 (1f, 0.0456f, 1f);
 
     // Starts the DotMotion coroutine
     public void StartDotMotion(){
-        // Detirmine position of stimulus
-        ChoosePosition();
         StartCoroutine(DotMotion());
-    }
-
-    // Randomly chooses location of dot motion stimulus
-    public void ChoosePosition(){
-        int rand = Random.Range(0,3);
-        pos = positions[rand];
     }
 
     // Activates the dot motion stimulus for .5 seconds then deactivates it 
     IEnumerator DotMotion(){   
         // Set the objects position
+        posList = session.settings.GetFloatList("stimulusLocation");
+        pos = new Vector3(posList[0], posList[1], posList[2]);
         transform.position = pos;
 
         // Make the object invisible

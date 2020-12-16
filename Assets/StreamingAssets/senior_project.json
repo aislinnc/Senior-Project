@@ -1,3 +1,6 @@
 {
-  
+    "fixationTime": 1,
+    "stimulusLocation": [0, 2.5, 2.5],
+    "targetMoveSpeed": 4,
+    "distractorMoveSpeed": 4
 }

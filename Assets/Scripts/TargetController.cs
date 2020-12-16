@@ -5,21 +5,28 @@ using UXF;
 
 public class TargetController : MonoBehaviour
 {
+    public Session session;
     // Dot motion stimulus object
     public GameObject stim;
-    private DotMotionController dotMoCont;
-    public int moveSpeed = 4;
+    // Target movement
+    private List<float> posList;
+    private Vector3 pos;
+    private int moveSpeed;
     public string direction;
     Vector3 targetDir;
+    // Size
     Vector3 normScale = new Vector3 (0.39515f, 0.02757752f, 0.39515f);
+    // Camera
+    public Camera cam;
     
     void Start(){
         // Make the object invisible
         transform.localScale = new Vector3(0,0,0);   
         
         // Set target starting location to dot stimulus location
-        dotMoCont = stim.GetComponent<DotMotionController>();
-        transform.position = dotMoCont.pos;
+        posList = session.settings.GetFloatList("stimulusLocation");
+        pos =  new Vector3(posList[0], posList[1], posList[2]);
+        transform.position = pos;
 
         // TEMPORARY UNTIL I HAVE ACTUAL DOT MOTION STIMULUS 
         int rand = Random.Range(0,1);
@@ -38,7 +45,14 @@ public class TargetController : MonoBehaviour
         // After the dot motion stimulus dissapears the target moves away from it 
         if(stim.activeInHierarchy == false){
             transform.localScale = normScale;
+            moveSpeed = session.settings.GetInt("targetMoveSpeed");
             transform.Translate(targetDir*moveSpeed*Time.deltaTime);
+
+            // Translate position to viewport position
+            Vector3 viewPos = cam.WorldToViewportPoint(transform.position);
+            if(viewPos.x > 1 || viewPos.x < 0 || viewPos.y > 1 || viewPos.y < 0){
+                gameObject.SetActive(false);
+            }
         }
     }
 }

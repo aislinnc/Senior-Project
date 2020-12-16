@@ -1,8 +1,9 @@
 timestamp,log_type,message
+0,Exception,NullReferenceException: Object reference not set to an instance of an object
+0,Exception,NullReferenceException: Object reference not set to an instance of an object
 0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-6.087304,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-7.525359,Warning,Warning: Session already exists! Continuing will overwrite
-7.525359,Log,In Fixate coroutine
-19.93913,Log,In Fixate coroutine
-23.82001,Log,In Fixate coroutine
-28.82214,Log,In Fixate coroutine
+6.353874,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+7.927163,Warning,Warning: Session already exists! Continuing will overwrite
+7.927163,Log,In Fixate coroutine
+10.99722,Log,In Fixate coroutine
+13.71228,Log,In Fixate coroutine

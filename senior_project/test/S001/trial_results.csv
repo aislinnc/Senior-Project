@@ -1,6 +1,4 @@
 directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time
-senior_project/test/S001,senior_project,test,1,1,1,1,7.525359,19.93913
-senior_project/test/S001,senior_project,test,1,2,1,2,19.93913,23.82001
-senior_project/test/S001,senior_project,test,1,3,1,3,23.82001,28.82214
-senior_project/test/S001,senior_project,test,1,4,1,4,28.82214,34.6935
-
+senior_project/test/S001,senior_project,test,1,1,1,1,7.927163,10.99722
+senior_project/test/S001,senior_project,test,1,2,1,2,10.99722,13.71228
+senior_project/test/S001,senior_project,test,1,3,1,3,13.71228,47.09744
