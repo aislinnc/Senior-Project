@@ -5,49 +5,58 @@ using UXF;
 
 public class DistractorController : MonoBehaviour
 {
-    public Session session;
-    // Dot motion stimulus object
-    public GameObject stim;
-    // Target object
-    public GameObject target;
-    private TargetController targCont;
+    public Session distSession;
+    public GameObject uxfRig;
+    public SessionLogger sessionLogger;
+    
+    // FOR USE ONCE DOT MOTION WORKS 
+    public GameObject dotMotion;
+    public DotStimScript dotStimScript;
+    private int horDir;
+    private int verDir;
+    private string combinedDirection;
+
     // Movement
-    private List<float> posList;
-    private Vector3 pos;
+    public Tracker distractorTracker;
     private int moveSpeed;
-    Vector3 distDir;
-    // Size
-    Vector3 normScale = new Vector3 (0.39515f, 0.02757752f, 0.39515f);
+    private Vector3 distDir;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Make the object invisible
-        transform.localScale = new Vector3(0,0,0);
+    void Start(){
+        // Find UXF rig using find game object
+        uxfRig = GameObject.Find("UXF_Rig");
+        // use get component to get the script called session 
+        sessionLogger = uxfRig.GetComponent<SessionLogger>();
+        distSession = sessionLogger.session;
 
-        // Set starting location
-        posList = session.settings.GetFloatList("stimulusLocation");
-        pos = new Vector3(posList[0], posList[1], posList[2]);
-        transform.position = pos;
+        // FOR USE ONCE DOT MOTION WORKS 
+        // Get the combined direction of the stimulus dots
+        dotMotion = GameObject.Find("DotStimulus");
+        dotStimScript = dotMotion.GetComponent<DotStimScript>();
+        combinedDirection = dotStimScript.combined_direction;
 
-        // TEMPORARY UNTIL I HAVE ACTUAL DOT MOTION STIMULUS
-        targCont = target.GetComponent<TargetController>();
-        if(targCont.direction == "left"){
-            distDir = new Vector3 (0f, -1f, -1f);
+        // Set the direction and speed the distractor
+        if(combinedDirection == "Northeast"){
+            distDir = new Vector3(-1f, -1f, 0f);
+        }
+        else if(combinedDirection == "Southeast"){
+            distDir = new Vector3(-1f, 1f, 0f);
+        }
+        else if(combinedDirection == "Northwest"){
+            distDir = new Vector3(1f, -1f, 0f);
         }
         else{
-           distDir = new Vector3 (0f, 1f, 1f); 
+            distDir = new Vector3(1f, 1f, 0f);
         }
+        moveSpeed = distSession.settings.GetInt("distractorMoveSpeed");
+
+        // Add a tracker of its position
+        distSession.trackedObjects.Add(distractorTracker);
+        distractorTracker.StartRecording();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // After the dot motion stimulus dissapears the target moves away from it 
-        if(stim.activeInHierarchy == false){
-            transform.localScale = normScale;
-            moveSpeed = session.settings.GetInt("distractorMoveSpeed");
-            transform.Translate(distDir*moveSpeed*Time.deltaTime);
-        }
+        // Send the distractor in the opposite direction of the target
+        transform.Translate(distDir*moveSpeed*Time.deltaTime);
     }
 }

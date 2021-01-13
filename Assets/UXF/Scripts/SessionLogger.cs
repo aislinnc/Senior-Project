@@ -13,7 +13,7 @@ namespace UXF
 	/// </summary>
 	public class SessionLogger : MonoBehaviour
 	{	
-		private Session session;
+		public Session session;
 		private FileIOManager fileIOManager;
 		private DataTable table;
 
