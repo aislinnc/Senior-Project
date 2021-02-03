@@ -1,0 +1,11 @@
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,outcome,difficulty_level,target_direction,distractor_direction
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,1,1,1,2.348517,4.352454,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,2,1,2,4.352454,6.281101,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,3,1,3,6.281101,8.087009,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,4,1,4,8.087009,9.870831,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,5,1,5,9.870831,11.47883,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,6,1,6,11.47883,13.02558,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,7,1,7,13.02558,14.6428,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,8,1,8,14.6428,16.28599,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,9,1,9,16.28599,17.84642,fail,1,,Northeast
+my_experiment/P_210202221831/S001,my_experiment,P_210202221831,1,10,1,10,17.84642,19.83163,,1,,Northeast

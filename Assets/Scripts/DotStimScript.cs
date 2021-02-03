@@ -1,10 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UXF;
 
 
 public class DotStimScript : MonoBehaviour {
-/* 
+    // Added by Aislinn to get session    
+    public Session dotSession;
+    public GameObject experiment;
+    public ExperimentGenerator experimentGenerator;
+    /*
+    public Session dotSession;
+    public GameObject uxf_rig;
+    public SessionLogger sessionLogger;
+    */
+    
     //When the dot stimulus is instantiated, it calls this to create all the dots it needs as children and set them moving.
     public int num_dots;
     public int num_noise;
@@ -22,9 +32,20 @@ public class DotStimScript : MonoBehaviour {
 
     List<GameObject> dots;
 
-    void Start()
-    {
-
+    public void Awake(){
+        // Added by Aislinn to get session 
+        experiment = GameObject.FindGameObjectWithTag("Experiment");
+        experimentGenerator = experiment.GetComponent<ExperimentGenerator>();
+        dotSession = experimentGenerator.session;
+    }
+    
+    public void Start()
+    {       
+        /*
+        uxf_rig = GameObject.Find("UXF_Rig");
+        sessionLogger = uxf_rig.GetComponent<SessionLogger>();
+        dotSession = sessionLogger.session;
+        */
 
         //stim_direction = Random.Range(0, 2);
         if (stim_directionH == 0 && stim_directionV == 0)
@@ -47,18 +68,18 @@ public class DotStimScript : MonoBehaviour {
         
 
         Debug.Log("Stimulus Direction is: " + combined_direction);
-        num_dots = Mathf.RoundToInt(Mathf.Pow(Stimulus.ApertureRad, 2f) * Mathf.PI * Stimulus.Density);
+        num_dots = Mathf.RoundToInt(Mathf.Pow(dotSession.settings.GetFloat("ApertureRad"), 2f) * Mathf.PI * dotSession.settings.GetFloat("Density"));
 
-        num_noise = (int)(num_dots * Stimulus.PctNoiseDots / 100);
-        num_signal = (int)(num_dots * (1 - (Stimulus.PctNoiseDots / 100)));
+        num_noise = (int)(num_dots * dotSession.settings.GetInt("PctNoiseDots") / 100);
+        num_signal = (int)(num_dots * (1 - (dotSession.settings.GetInt("PctNoiseDots") / 100)));
 
-        dot_diam_units = ((Stimulus.DotSize * Mathf.PI) / (60 * 180)) * Stimulus.StimDepth; //convert arcmin to radians (drop sin term due to small angle approx) and scale by depth
-        ap_rad_units = ((Stimulus.ApertureRad * Mathf.PI) / (180)) * Stimulus.StimDepth;
+        dot_diam_units = ((dotSession.settings.GetInt("DotSize") * Mathf.PI) / (60 * 180)) * dotSession.settings.GetFloat("StimDepth"); //convert arcmin to radians (drop sin term due to small angle approx) and scale by depth
+        ap_rad_units = ((dotSession.settings.GetFloat("ApertureRad") * Mathf.PI) / (180)) * dotSession.settings.GetFloat("StimDepth");
         dots = new List<GameObject>();
         stim_start_time = Time.realtimeSinceStartup;
         Debug.Log("Coherence at " + max_angle);
 
-        if (!Stimulus.BalanceNoise)
+        if (!dotSession.settings.GetBool("BalanceNoise"))
         {
             for (int i = 0; i < (int)num_dots; i++)
             {
@@ -70,7 +91,7 @@ public class DotStimScript : MonoBehaviour {
                 dot.transform.localPosition = new Vector3(dot_position[0], 0, dot_position[1]);
                 dot.transform.localScale = new Vector3(dot_diam_units / (2 * ap_rad_units), 0, dot_diam_units / (2 * ap_rad_units));
                 dot.GetComponent<DotMotion>().current_angle = max_angle;
-                if (Random.value <= (Stimulus.PctNoiseDots / 100))
+                if (Random.value <= (dotSession.settings.GetInt("PctNoiseDots") / 100))
                 { dot.GetComponent<DotMotion>().isNoise = true; }
                 else { dot.GetComponent<DotMotion>().isNoise = false; }
 
@@ -80,7 +101,7 @@ public class DotStimScript : MonoBehaviour {
                 dots.Add(dot);
             }
         }
-        if (Stimulus.BalanceNoise)
+        if (dotSession.settings.GetBool("BalanceNoise"))
         {
             if (num_noise % 2 != 0)
             {
@@ -215,7 +236,7 @@ public class DotStimScript : MonoBehaviour {
 
     void drawDots()
     {
-        wait_time = (Stimulus.Duration ) / num_dots;
+        wait_time = (dotSession.settings.GetFloat("Duration") ) / num_dots;
 
         for(int i = 0; i < num_dots; i++)
         {
@@ -228,6 +249,4 @@ public class DotStimScript : MonoBehaviour {
         }
 
     }
-
-*/
 }

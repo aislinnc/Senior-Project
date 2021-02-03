@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UXF;
 
 public class DotMotion : MonoBehaviour {
-/*
     public float current_angle; //assigned by parent, chosen randomly from list in JSON
     public float current_directionH; //assigned by parent, chosen randomly as 0 or 1 (east, west)
     public float current_directionV; // randomly chosen so that 0 is North and 1 is South
@@ -21,21 +21,36 @@ public class DotMotion : MonoBehaviour {
     public GameObject buddyDot;
 	// Use this for initialization
 
-	void Start () {
+    // Added by Aislinn to get session
+    public Session dotSession;
+    public GameObject experiment;
+    public ExperimentGenerator experimentGenerator;
+    // Added by Aislinn to get stim_start_time from DotStimScript
+    public GameObject dotStimulus;
+    public DotStimScript dotStimScript;
+    
+	void Start () 
+    {
+        // Added by Aislinn to get session
+        experiment = GameObject.FindGameObjectWithTag("Experiment");
+        experimentGenerator = experiment.GetComponent<ExperimentGenerator>();
+        dotSession = experimentGenerator.session;
+        // Added by Aislinn to get stim_start_time from DotStimScript
+        dotStimulus = GameObject.FindGameObjectWithTag("DotStimulus");
+        dotStimScript = dotStimulus.GetComponent<DotStimScript>();
 
-        speedApertureUnits = Stimulus.DotSpeed/(2*Stimulus.ApertureRad);// Aperture has scaled radius of 1 here, need to scale speed to use with local position
-
+        speedApertureUnits = dotSession.settings.GetInt("DotSpeed")/(2*dotSession.settings.GetFloat("ApertureRad"));// Aperture has scaled radius of 1 here, need to scale speed to use with local position
 
         if (current_directionH == 1 && !isNoise) // "right opening" movement wedge (use for motion with leftward component)
         {
-            if (!Stimulus.DeterministicSignal) { movement_angle = Quaternion.AngleAxis(-Random.Range(-current_angle / 2, current_angle / 2), Vector3.up); }
+            if (!dotSession.settings.GetBool("DeterministicSignal")) { movement_angle = Quaternion.AngleAxis(-Random.Range(-current_angle / 2, current_angle / 2), Vector3.up); }
             
             transform.localRotation = Quaternion.identity * movement_angle;
             //Debug.Log("movement angle is " + movement_angle.eulerAngles);
         }
         if( current_directionH != 1 && ! isNoise) // "left opening" movement wedge (use for motion with rightward component)
         {
-            if (!Stimulus.DeterministicSignal)
+            if (!dotSession.settings.GetBool("DeterministicSignal"))
             { movement_angle = Quaternion.AngleAxis(Random.Range(-current_angle / 2, current_angle / 2), Vector3.up); }
             transform.localRotation = Quaternion.identity * movement_angle;
            // Debug.Log("movement angle is " + movement_angle.eulerAngles);
@@ -61,12 +76,13 @@ public class DotMotion : MonoBehaviour {
 
 	void Update () {
         
-        
-        if ((Time.realtimeSinceStartup) < Stimulus.Duration + start_of_stimulus)
+        start_of_stimulus = dotStimScript.stim_start_time; // AISLINN ADDED 
+
+        if ((Time.realtimeSinceStartup) < dotSession.settings.GetFloat("Duration") + start_of_stimulus)
         {
             gameObject.SetActive(true);
             
-            if ((Time.realtimeSinceStartup) < Stimulus.DotLife + start_of_dot)
+            if ((Time.realtimeSinceStartup) < dotSession.settings.GetFloat("DotLife") + start_of_dot)
             {
                 //float deltaT = 1 / 90f; //change this after debugging
                 if (current_directionH == 1 && current_directionV ==1)
@@ -114,5 +130,4 @@ public class DotMotion : MonoBehaviour {
         //    Debug.Break();
         //}
 	}
-*/
 }
