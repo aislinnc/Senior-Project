@@ -8,6 +8,7 @@ TagManager:
   - DotStimulus
   - Target
   - Distractor
+  - targDistParent
   layers:
   - Default
   - TransparentFX

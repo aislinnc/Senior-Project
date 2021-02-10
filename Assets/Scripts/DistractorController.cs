@@ -25,8 +25,6 @@ public class DistractorController : MonoBehaviour
         // Get the direction of the stimulus dots and go the opposite way
         createDotMotion = experiment.GetComponent<CreateDotMotion>();
         combinedDirection = createDotMotion.combined_direction;
-        distSession.CurrentTrial.result["distractor_direction"] = combinedDirection; 
-
 
         // Set the direction and speed the distractor
         moveSpeed = distSession.settings.GetInt("distractorMoveSpeed");

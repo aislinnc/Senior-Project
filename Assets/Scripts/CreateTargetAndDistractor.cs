@@ -8,6 +8,9 @@ public class CreateTargetAndDistractor : MonoBehaviour
     public Session session;
     public GameObject targetPrefab;
     public GameObject distractorPrefab;
+    public GameObject parent;
+    public GameObject target;
+    public GameObject distractor;
     private List<float> posList;
     private Vector3 pos;
     private float waitTime;

@@ -187,7 +187,7 @@ public class DotStimScript : MonoBehaviour {
                 }
                 if (stim_directionH == 0)
                 {
-                    Debug.Log(i.ToString());
+                    //Debug.Log(i.ToString());
                     dot.GetComponent<DotMotion>().movement_angle = Quaternion.AngleAxis(-DeterministicAngles[i], Vector3.up);
                     dot.GetComponent<DotMotion>().pretty_movement_angle = DeterministicAngles[i];
                 }               

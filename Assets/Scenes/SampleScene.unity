@@ -676,7 +676,7 @@ PrefabInstance:
     - target: {fileID: 224487761690423894, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.00078218617
+      value: 0.00000074919717
       objectReference: {fileID: 0}
     - target: {fileID: 224487761690423894, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
@@ -686,7 +686,7 @@ PrefabInstance:
     - target: {fileID: 224546371281550106, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000066129537
+      value: 0.000011833644
       objectReference: {fileID: 0}
     - target: {fileID: 224546371281550106, guid: 0a3b6392f04558844bd340e68ced1ff9,
         type: 3}
@@ -1104,6 +1104,9 @@ MonoBehaviour:
     type: 3}
   distractorPrefab: {fileID: 5806467705994852873, guid: 6f548df08e87ad345877fc578f999c17,
     type: 3}
+  parent: {fileID: 0}
+  target: {fileID: 0}
+  distractor: {fileID: 0}
 --- !u!114 &1126772750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1119,6 +1122,8 @@ MonoBehaviour:
   session: {fileID: 1719879988}
   target: {fileID: 0}
   distractor: {fileID: 0}
+  keyPressed: 0
+  keySuccess: 0
   nextLevel: 0
 --- !u!1 &1334143424
 GameObject:

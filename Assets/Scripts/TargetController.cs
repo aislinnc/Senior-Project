@@ -14,6 +14,7 @@ public class TargetController : MonoBehaviour
     private int moveSpeed;
     public Vector3 targetDir;
     //public Tracker targetTracker;
+    public Renderer rend;
 
     void Start(){
         // Get session

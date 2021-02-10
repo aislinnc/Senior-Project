@@ -52,6 +52,7 @@ public class CreateDotMotion : MonoBehaviour
         instStim.SetActive(true);
         dotStimScript = instStim.GetComponent<DotStimScript>();
         combined_direction = dotStimScript.combined_direction;
+        Debug.Log("From CreateDotMotion: " + combined_direction);
 
         // Display it for .5 seconds
         yield return new WaitForSeconds(session.settings.GetFloat("stimulusTime"));

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UXF;
@@ -11,9 +11,9 @@ public class GetKeyPress : MonoBehaviour
     public GameObject distractor;
     //private DistractorController distractorController;
     private CreateDotMotion createDotMotion;
-    private bool keyPressed;
-    private string combined_direction;
-    private bool keySuccess;
+    public bool keyPressed;
+    public string combined_direction;
+    public bool keySuccess;
     private int currentLevel;
     public int nextLevel;
     private int maxLevel;
@@ -39,73 +39,77 @@ public class GetKeyPress : MonoBehaviour
         if(createDotMotion.stimActive == false){
             // Get the combined direction of the dot motion
             combined_direction = createDotMotion.combined_direction;
+            
 
             // If the left arrow key was pressed 
             if(Input.GetKeyDown(KeyCode.LeftArrow)){
-                keyPressed = true;
+                Debug.Log("left key");
                 // If it was the right key to press
                 if(combined_direction == "Northwest" || combined_direction == "Southwest"){
                     keySuccess = true;
+                    EndTrial();
                 }
+                // If it was the wrong key
                 else{
                     keySuccess = false;
+                    EndTrial();
                 }
             }
             else if(Input.GetKeyDown(KeyCode.RightArrow)){
-                keyPressed = true;
+                Debug.Log("right key");
                 if(combined_direction == "Northeast" || combined_direction == "Southeast"){
                     keySuccess = true;
+                    EndTrial();
                 }
                 else{
                     keySuccess = false;
+                    EndTrial();
                 }
             }
-            // If neither key was pressed
-            else{
-                keyPressed = false;
-            }
         }
-        
-        // If a key was pressed end the current trial and start a new one 
-        if(keyPressed == true){
-            keyPressed = false;
-            /*
-            // Stop target and distractor controller
-            targetController.targetTracker.StopRecording();
-            distractorController.distractorTracker.StopRecording();
-            */
- 
-            if(keySuccess == true){
-               session.CurrentTrial.result["outcome"] = "success"; 
-            }
-            else{
-                session.CurrentTrial.result["outcome"] = "fail";
-            }
+    }
 
-            DifficultyAdjuster();
+    public void EndTrial(){
+        /*
+        // Stop target and distractor controller
+        targetController.targetTracker.StopRecording();
+        distractorController.distractorTracker.StopRecording();
+        */
 
-            if(lastTrial == false){
-                // Destroy target and distractor at the end of the trail
-                target = GameObject.FindGameObjectWithTag("Target");
-                distractor = GameObject.FindGameObjectWithTag("Distractor");
-                Destroy(target);
-                Destroy(distractor);
+        if(keySuccess == true){
+            session.CurrentTrial.result["outcome"] = "success";
+            Debug.Log("trial success");
+        }
+        else{
+            session.CurrentTrial.result["outcome"] = "fail";
+            Debug.Log("trial fail");
+        }
 
-                // End the current trial and start the next
-                Block currentBlock = session.CurrentBlock;
-                Trial newTrial = currentBlock.CreateTrial();
-                session.EndCurrentTrial();
-                newTrial.Begin();
-            }
-            else{
-                // End the current trial
-                Block currentBlock = session.CurrentBlock;
-                Trial newTrial = currentBlock.CreateTrial();
-                session.EndCurrentTrial();
+        DifficultyAdjuster();
+
+        if(lastTrial == false){
+            // Destroy target and distractor at the end of the trail
+            target = GameObject.FindGameObjectWithTag("Target");
+            distractor = GameObject.FindGameObjectWithTag("Distractor");
+            //Destroy(target);
+            //Destroy(distractor);
+            target.SetActive(false);
+            distractor.SetActive(false);
+
+            // End the current trial and start the next
+            Block currentBlock = session.CurrentBlock;
+            Trial newTrial = currentBlock.CreateTrial();
+            session.EndCurrentTrial();
+            newTrial.Begin();
+        }
+        else{
+            // End the current trial
+            Block currentBlock = session.CurrentBlock;
+            Trial newTrial = currentBlock.CreateTrial();
+            session.EndCurrentTrial();
                 
-                // End the session
-                session.End();
-            }
+            // End the session
+            session.End();
         }
     }
 
