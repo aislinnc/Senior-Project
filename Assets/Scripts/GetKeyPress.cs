@@ -150,13 +150,16 @@ public class GetKeyPress : MonoBehaviour
                 Debug.Log("successful: " + successful);
                 // If both are true the level increases, if not it remains the same
                 if(sameLevel == true && successful == true){
+                    Debug.Log("IN HERE");
                     // Check if it's the last level
                     if(currentLevel == maxLevel){
                         lastTrial = true;
                     }
                     else{
                         lastTrial = false;
-                        nextLevel = currentLevel++;
+                        nextLevel = currentLevel + 1;
+                        Debug.Log("currentLevel: " + currentLevel);
+                        Debug.Log("nextLevel: " + nextLevel);
                     }
                 }
                 else{
@@ -166,7 +169,7 @@ public class GetKeyPress : MonoBehaviour
             // If the current trial was unsuccesful
             else{
                 if(currentLevel > 1){
-                    nextLevel = currentLevel--;
+                    nextLevel = currentLevel - 1;
                 }
                 else{
                     nextLevel = currentLevel;
@@ -174,6 +177,6 @@ public class GetKeyPress : MonoBehaviour
             }        
         }
         //Debug.Log("currentLevel: " + currentLevel);
-        Debug.Log("nextLevel: " + nextLevel);
+        Debug.Log("nextLevel outside of loop: " + nextLevel);
     }
 }
