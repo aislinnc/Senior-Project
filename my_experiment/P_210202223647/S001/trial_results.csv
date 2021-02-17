@@ -1,6 +1,0 @@
-directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,outcome,difficulty_level,target_direction,distractor_direction
-my_experiment/P_210202223647/S001,my_experiment,P_210202223647,1,1,1,1,1.163547,3.138341,fail,1,,Northeast
-my_experiment/P_210202223647/S001,my_experiment,P_210202223647,1,2,1,2,3.138341,5.103539,fail,1,,Northeast
-my_experiment/P_210202223647/S001,my_experiment,P_210202223647,1,3,1,3,5.103539,6.977304,fail,1,,Northeast
-my_experiment/P_210202223647/S001,my_experiment,P_210202223647,1,4,1,4,6.977304,8.761591,fail,1,,Northeast
-my_experiment/P_210202223647/S001,my_experiment,P_210202223647,1,5,1,5,8.761591,10.11227,,1,,

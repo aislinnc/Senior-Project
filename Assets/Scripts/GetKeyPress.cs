@@ -43,7 +43,6 @@ public class GetKeyPress : MonoBehaviour
 
             // If the left arrow key was pressed 
             if(Input.GetKeyDown(KeyCode.LeftArrow)){
-                Debug.Log("left key");
                 // If it was the right key to press
                 if(combined_direction == "Northwest" || combined_direction == "Southwest"){
                     keySuccess = true;
@@ -56,7 +55,6 @@ public class GetKeyPress : MonoBehaviour
                 }
             }
             else if(Input.GetKeyDown(KeyCode.RightArrow)){
-                Debug.Log("right key");
                 if(combined_direction == "Northeast" || combined_direction == "Southeast"){
                     keySuccess = true;
                     EndTrial();
@@ -91,10 +89,10 @@ public class GetKeyPress : MonoBehaviour
             // Destroy target and distractor at the end of the trail
             target = GameObject.FindGameObjectWithTag("Target");
             distractor = GameObject.FindGameObjectWithTag("Distractor");
-            //Destroy(target);
-            //Destroy(distractor);
-            target.SetActive(false);
-            distractor.SetActive(false);
+            Destroy(target);
+            Destroy(distractor);
+            //target.SetActive(false);
+            //distractor.SetActive(false);
 
             // End the current trial and start the next
             Block currentBlock = session.CurrentBlock;
@@ -113,7 +111,9 @@ public class GetKeyPress : MonoBehaviour
         }
     }
 
-    public void DifficultyAdjuster(){        
+    public void DifficultyAdjuster(){   
+        //Debug.Log("In DifficultyAdjuster");
+
         // Get the current number of trials 
         int numTrials = session.CurrentTrial.numberInBlock;
 
@@ -122,6 +122,7 @@ public class GetKeyPress : MonoBehaviour
 
         // Get the max level 
         maxLevel = session.settings.GetInt("difficultyLevels");
+        //Debug.Log("maxLevel: " + maxLevel);
 
         // If there are less than 3 past levels, the next level will be 1
         if(numTrials < 3){
@@ -129,8 +130,9 @@ public class GetKeyPress : MonoBehaviour
         }
         // 3 or more trials
         else{
+            //Debug.Log("ATTENTION: More than 3 trials");
             // Check if the current trial was a success
-            if((string) session.GetTrial(numTrials).result["outcome"] == "success"){                // Check if the past 3 trials were the same level
+            if((string) session.GetTrial(numTrials).result["outcome"] == "success"){    
                 // Check if the past 2 trials were the same level and if they were successful
                 bool sameLevel = true;
                 bool successful = true;
@@ -144,6 +146,8 @@ public class GetKeyPress : MonoBehaviour
                         successful = false;
                     }
                 }
+                Debug.Log("sameLevel: " + sameLevel);
+                Debug.Log("successful: " + successful);
                 // If both are true the level increases, if not it remains the same
                 if(sameLevel == true && successful == true){
                     // Check if it's the last level
@@ -169,5 +173,7 @@ public class GetKeyPress : MonoBehaviour
                 }
             }        
         }
+        //Debug.Log("currentLevel: " + currentLevel);
+        Debug.Log("nextLevel: " + nextLevel);
     }
 }

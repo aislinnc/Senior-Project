@@ -1,10 +1,10 @@
 {
     "fixationTime": 1.0,
     "stimulusLocation": [0.0, 0.0, 0.0],
-    "stimulusTime": 1.0,
+    "stimulusTime": 0.5,
     "targetMoveSpeed": 4,
     "distractorMoveSpeed": 4,
-    "difficultyLevels": 2,
+    "difficultyLevels": 3,
     "ApertureRad": 2.5,
     "PctNoiseDots": 1,
     "BalanceNoise": true,

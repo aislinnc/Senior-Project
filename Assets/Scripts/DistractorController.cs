@@ -28,6 +28,7 @@ public class DistractorController : MonoBehaviour
 
         // Set the direction and speed the distractor
         moveSpeed = distSession.settings.GetInt("distractorMoveSpeed");
+        transform.Rotate(90f, 0f, 0f);
         if(combinedDirection == "Northeast"){
             distDir = new Vector3(-1f, -1f, 0f);
             distDirection = "Southwest";
@@ -58,6 +59,6 @@ public class DistractorController : MonoBehaviour
     void Update()
     {
         // Send the distractor in the opposite direction of the target
-        transform.Translate(distDir*moveSpeed*Time.deltaTime);
+        transform.Translate(distDir*moveSpeed*Time.deltaTime, Space.World);
     }
 }

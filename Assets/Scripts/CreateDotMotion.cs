@@ -48,11 +48,10 @@ public class CreateDotMotion : MonoBehaviour
         // Instantiate dot motion stimulus
         // HAVE TO ADD DIFFICULTY INTO DOT MOTION
         instStim = Instantiate(stim, pos, Quaternion.identity);
-        instStim.transform.Rotate(-90f, 0f, 0f);
+        instStim.transform.Rotate(90f, 180f, 0f);
         instStim.SetActive(true);
         dotStimScript = instStim.GetComponent<DotStimScript>();
         combined_direction = dotStimScript.combined_direction;
-        Debug.Log("From CreateDotMotion: " + combined_direction);
 
         // Display it for .5 seconds
         yield return new WaitForSeconds(session.settings.GetFloat("stimulusTime"));

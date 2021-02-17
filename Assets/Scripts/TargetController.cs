@@ -29,6 +29,7 @@ public class TargetController : MonoBehaviour
 
         // Set the direction and speed the target
         moveSpeed = targetSession.settings.GetInt("targetMoveSpeed");
+        transform.Rotate(90f, 0f, 0f);
         if(combinedDirection == "Northeast"){
             targetDir = new Vector3(1f, 1f, 0f);
         }
@@ -52,6 +53,6 @@ public class TargetController : MonoBehaviour
     void Update()
     {
         // Target moves in the direction of the stimulus dots 
-        transform.Translate(targetDir*moveSpeed*Time.deltaTime);
+        transform.Translate(targetDir*moveSpeed*Time.deltaTime,Space.World);
     }
 }

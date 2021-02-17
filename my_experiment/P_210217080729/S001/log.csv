@@ -1,0 +1,10 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+1.826541,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.830087,Log,From CreateDotMotion: Southeast
+2.830087,Log,Stimulus Direction is: Southeast
+2.830087,Log,Coherence at 0
+4.302559,Log,trial success
+5.303023,Log,From CreateDotMotion: Southeast
+5.303023,Log,Stimulus Direction is: Southeast
+5.303023,Log,Coherence at 0

@@ -1,0 +1,68 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.665846,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+3.668265,Log,From CreateDotMotion: Northwest
+3.668265,Log,Stimulus Direction is: Northwest
+3.668265,Log,Coherence at 0
+4.627255,Log,trial success
+5.6305,Log,From CreateDotMotion: Southeast
+5.6305,Log,Stimulus Direction is: Southeast
+5.6305,Log,Coherence at 0
+6.585016,Log,trial success
+7.589275,Log,From CreateDotMotion: Southeast
+7.589275,Log,Stimulus Direction is: Southeast
+7.589275,Log,Coherence at 0
+8.579514,Log,trial success
+8.579514,Log,sameLevel: True
+8.579514,Log,successful: True
+9.581044,Log,From CreateDotMotion: Southwest
+9.581044,Log,Stimulus Direction is: Southwest
+9.581044,Log,Coherence at 0
+10.52977,Log,trial success
+10.52977,Log,sameLevel: True
+10.52977,Log,successful: True
+11.53021,Log,From CreateDotMotion: Northwest
+11.53021,Log,Stimulus Direction is: Northwest
+11.53021,Log,Coherence at 0
+12.46497,Log,trial success
+12.46497,Log,sameLevel: True
+12.46497,Log,successful: True
+13.46751,Log,From CreateDotMotion: Southeast
+13.46751,Log,Stimulus Direction is: Southeast
+13.46751,Log,Coherence at 0
+14.40544,Log,trial success
+14.40544,Log,sameLevel: True
+14.40544,Log,successful: True
+15.40752,Log,From CreateDotMotion: Northeast
+15.40752,Log,Stimulus Direction is: Northeast
+15.40752,Log,Coherence at 0
+16.47953,Log,trial success
+16.47953,Log,sameLevel: True
+16.47953,Log,successful: True
+17.48092,Log,From CreateDotMotion: Southwest
+17.48092,Log,Stimulus Direction is: Southwest
+17.48092,Log,Coherence at 0
+18.42656,Log,trial success
+18.42656,Log,sameLevel: True
+18.42656,Log,successful: True
+19.43058,Log,From CreateDotMotion: Northwest
+19.43058,Log,Stimulus Direction is: Northwest
+19.43058,Log,Coherence at 0
+20.40278,Log,trial success
+20.40278,Log,sameLevel: True
+20.40278,Log,successful: True
+21.40359,Log,From CreateDotMotion: Northwest
+21.40359,Log,Stimulus Direction is: Northwest
+21.40359,Log,Coherence at 0
+22.40807,Log,trial success
+22.40807,Log,sameLevel: True
+22.40807,Log,successful: True
+23.41052,Log,From CreateDotMotion: Northwest
+23.41052,Log,Stimulus Direction is: Northwest
+23.41052,Log,Coherence at 0
+24.38498,Log,trial success
+24.38498,Log,sameLevel: True
+24.38498,Log,successful: True
+25.38601,Log,From CreateDotMotion: Northwest
+25.38601,Log,Stimulus Direction is: Northwest
+25.38601,Log,Coherence at 0

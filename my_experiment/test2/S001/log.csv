@@ -1,0 +1,407 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+7.012049,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+8.017403,Log,From CreateDotMotion: Southeast
+8.017403,Log,Stimulus Direction is: Southeast
+8.017403,Log,Coherence at 0
+9.11146,Log,trial success
+10.11218,Log,From CreateDotMotion: Southeast
+10.11218,Log,Stimulus Direction is: Southeast
+10.11218,Log,Coherence at 0
+10.95927,Log,trial fail
+11.96198,Log,From CreateDotMotion: Southeast
+11.96198,Log,Stimulus Direction is: Southeast
+11.96198,Log,Coherence at 0
+12.78359,Log,trial success
+13.78995,Log,From CreateDotMotion: Northwest
+13.78995,Log,Stimulus Direction is: Northwest
+13.78995,Log,Coherence at 0
+13.78995,Log,0
+13.78995,Log,1
+13.78995,Log,2
+13.78995,Log,3
+13.78995,Log,4
+13.78995,Log,5
+13.78995,Log,6
+13.78995,Log,7
+13.78995,Log,8
+13.78995,Log,9
+13.78995,Log,10
+13.78995,Log,11
+13.78995,Log,12
+13.78995,Log,13
+13.78995,Log,14
+13.78995,Log,15
+13.78995,Log,16
+13.78995,Log,17
+13.78995,Log,18
+13.78995,Log,19
+13.78995,Log,20
+13.78995,Log,21
+13.78995,Log,22
+13.78995,Log,23
+13.78995,Log,24
+13.78995,Log,25
+13.78995,Log,26
+13.78995,Log,27
+13.78995,Log,28
+13.78995,Log,29
+13.78995,Log,30
+13.78995,Log,31
+13.78995,Log,32
+13.78995,Log,33
+13.78995,Log,34
+13.78995,Log,35
+13.78995,Log,36
+13.78995,Log,37
+13.78995,Log,38
+13.78995,Log,39
+13.78995,Log,40
+13.78995,Log,41
+13.78995,Log,42
+13.78995,Log,43
+13.78995,Log,44
+13.78995,Log,45
+13.78995,Log,46
+13.78995,Log,47
+13.78995,Log,48
+13.78995,Log,49
+13.78995,Log,50
+13.78995,Log,51
+13.78995,Log,52
+13.78995,Log,53
+13.78995,Log,54
+13.78995,Log,55
+13.78995,Log,56
+13.78995,Log,57
+13.78995,Log,58
+13.78995,Log,59
+13.78995,Log,60
+13.78995,Log,61
+13.78995,Log,62
+13.78995,Log,63
+13.78995,Log,64
+13.78995,Log,65
+13.78995,Log,66
+13.78995,Log,67
+13.78995,Log,68
+14.55501,Log,trial success
+15.55709,Log,From CreateDotMotion: Southwest
+15.55709,Log,Stimulus Direction is: Southwest
+15.55709,Log,Coherence at 0
+15.55709,Log,0
+15.55709,Log,1
+15.55709,Log,2
+15.55709,Log,3
+15.55709,Log,4
+15.55709,Log,5
+15.55709,Log,6
+15.55709,Log,7
+15.55709,Log,8
+15.55709,Log,9
+15.55709,Log,10
+15.55709,Log,11
+15.55709,Log,12
+15.55709,Log,13
+15.55709,Log,14
+15.55709,Log,15
+15.55709,Log,16
+15.55709,Log,17
+15.55709,Log,18
+15.55709,Log,19
+15.55709,Log,20
+15.55709,Log,21
+15.55709,Log,22
+15.55709,Log,23
+15.55709,Log,24
+15.55709,Log,25
+15.55709,Log,26
+15.55709,Log,27
+15.55709,Log,28
+15.55709,Log,29
+15.55709,Log,30
+15.55709,Log,31
+15.55709,Log,32
+15.55709,Log,33
+15.55709,Log,34
+15.55709,Log,35
+15.55709,Log,36
+15.55709,Log,37
+15.55709,Log,38
+15.55709,Log,39
+15.55709,Log,40
+15.55709,Log,41
+15.55709,Log,42
+15.55709,Log,43
+15.55709,Log,44
+15.55709,Log,45
+15.55709,Log,46
+15.55709,Log,47
+15.55709,Log,48
+15.55709,Log,49
+15.55709,Log,50
+15.55709,Log,51
+15.55709,Log,52
+15.55709,Log,53
+15.55709,Log,54
+15.55709,Log,55
+15.55709,Log,56
+15.55709,Log,57
+15.55709,Log,58
+15.55709,Log,59
+15.55709,Log,60
+15.55709,Log,61
+15.55709,Log,62
+15.55709,Log,63
+15.55709,Log,64
+15.55709,Log,65
+15.55709,Log,66
+15.55709,Log,67
+15.55709,Log,68
+16.37421,Log,trial fail
+17.37761,Log,From CreateDotMotion: Southwest
+17.37761,Log,Stimulus Direction is: Southwest
+17.37761,Log,Coherence at 0
+17.37761,Log,0
+17.37761,Log,1
+17.37761,Log,2
+17.37761,Log,3
+17.37761,Log,4
+17.37761,Log,5
+17.37761,Log,6
+17.37761,Log,7
+17.37761,Log,8
+17.37761,Log,9
+17.37761,Log,10
+17.37761,Log,11
+17.37761,Log,12
+17.37761,Log,13
+17.37761,Log,14
+17.37761,Log,15
+17.37761,Log,16
+17.37761,Log,17
+17.37761,Log,18
+17.37761,Log,19
+17.37761,Log,20
+17.37761,Log,21
+17.37761,Log,22
+17.37761,Log,23
+17.37761,Log,24
+17.37761,Log,25
+17.37761,Log,26
+17.37761,Log,27
+17.37761,Log,28
+17.37761,Log,29
+17.37761,Log,30
+17.37761,Log,31
+17.37761,Log,32
+17.37761,Log,33
+17.37761,Log,34
+17.37761,Log,35
+17.37761,Log,36
+17.37761,Log,37
+17.37761,Log,38
+17.37761,Log,39
+17.37761,Log,40
+17.37761,Log,41
+17.37761,Log,42
+17.37761,Log,43
+17.37761,Log,44
+17.37761,Log,45
+17.37761,Log,46
+17.37761,Log,47
+17.37761,Log,48
+17.37761,Log,49
+17.37761,Log,50
+17.37761,Log,51
+17.37761,Log,52
+17.37761,Log,53
+17.37761,Log,54
+17.37761,Log,55
+17.37761,Log,56
+17.37761,Log,57
+17.37761,Log,58
+17.37761,Log,59
+17.37761,Log,60
+17.37761,Log,61
+17.37761,Log,62
+17.37761,Log,63
+17.37761,Log,64
+17.37761,Log,65
+17.37761,Log,66
+17.37761,Log,67
+17.37761,Log,68
+18.19467,Log,trial success
+19.19986,Log,From CreateDotMotion: Northwest
+19.19986,Log,Stimulus Direction is: Northwest
+19.19986,Log,Coherence at 0
+19.19986,Log,0
+19.19986,Log,1
+19.19986,Log,2
+19.19986,Log,3
+19.19986,Log,4
+19.19986,Log,5
+19.19986,Log,6
+19.19986,Log,7
+19.19986,Log,8
+19.19986,Log,9
+19.19986,Log,10
+19.19986,Log,11
+19.19986,Log,12
+19.19986,Log,13
+19.19986,Log,14
+19.19986,Log,15
+19.19986,Log,16
+19.19986,Log,17
+19.19986,Log,18
+19.19986,Log,19
+19.19986,Log,20
+19.19986,Log,21
+19.19986,Log,22
+19.19986,Log,23
+19.19986,Log,24
+19.19986,Log,25
+19.19986,Log,26
+19.19986,Log,27
+19.19986,Log,28
+19.19986,Log,29
+19.19986,Log,30
+19.19986,Log,31
+19.19986,Log,32
+19.19986,Log,33
+19.19986,Log,34
+19.19986,Log,35
+19.19986,Log,36
+19.19986,Log,37
+19.19986,Log,38
+19.19986,Log,39
+19.19986,Log,40
+19.19986,Log,41
+19.19986,Log,42
+19.19986,Log,43
+19.19986,Log,44
+19.19986,Log,45
+19.19986,Log,46
+19.19986,Log,47
+19.19986,Log,48
+19.19986,Log,49
+19.19986,Log,50
+19.19986,Log,51
+19.19986,Log,52
+19.19986,Log,53
+19.19986,Log,54
+19.19986,Log,55
+19.19986,Log,56
+19.19986,Log,57
+19.19986,Log,58
+19.19986,Log,59
+19.19986,Log,60
+19.19986,Log,61
+19.19986,Log,62
+19.19986,Log,63
+19.19986,Log,64
+19.19986,Log,65
+19.19986,Log,66
+19.19986,Log,67
+19.19986,Log,68
+20.17838,Log,trial success
+21.17847,Log,From CreateDotMotion: Northeast
+21.17847,Log,Stimulus Direction is: Northeast
+21.17847,Log,Coherence at 0
+22.2075,Log,trial success
+23.21234,Log,From CreateDotMotion: Northwest
+23.21234,Log,Stimulus Direction is: Northwest
+23.21234,Log,Coherence at 0
+23.21234,Log,0
+23.21234,Log,1
+23.21234,Log,2
+23.21234,Log,3
+23.21234,Log,4
+23.21234,Log,5
+23.21234,Log,6
+23.21234,Log,7
+23.21234,Log,8
+23.21234,Log,9
+23.21234,Log,10
+23.21234,Log,11
+23.21234,Log,12
+23.21234,Log,13
+23.21234,Log,14
+23.21234,Log,15
+23.21234,Log,16
+23.21234,Log,17
+23.21234,Log,18
+23.21234,Log,19
+23.21234,Log,20
+23.21234,Log,21
+23.21234,Log,22
+23.21234,Log,23
+23.21234,Log,24
+23.21234,Log,25
+23.21234,Log,26
+23.21234,Log,27
+23.21234,Log,28
+23.21234,Log,29
+23.21234,Log,30
+23.21234,Log,31
+23.21234,Log,32
+23.21234,Log,33
+23.21234,Log,34
+23.21234,Log,35
+23.21234,Log,36
+23.21234,Log,37
+23.21234,Log,38
+23.21234,Log,39
+23.21234,Log,40
+23.21234,Log,41
+23.21234,Log,42
+23.21234,Log,43
+23.21234,Log,44
+23.21234,Log,45
+23.21234,Log,46
+23.21234,Log,47
+23.21234,Log,48
+23.21234,Log,49
+23.21234,Log,50
+23.21234,Log,51
+23.21234,Log,52
+23.21234,Log,53
+23.21234,Log,54
+23.21234,Log,55
+23.21234,Log,56
+23.21234,Log,57
+23.21234,Log,58
+23.21234,Log,59
+23.21234,Log,60
+23.21234,Log,61
+23.21234,Log,62
+23.21234,Log,63
+23.21234,Log,64
+23.21234,Log,65
+23.21234,Log,66
+23.21234,Log,67
+23.21234,Log,68
+24.05584,Log,trial success
+25.059,Log,From CreateDotMotion: Southeast
+25.059,Log,Stimulus Direction is: Southeast
+25.059,Log,Coherence at 0
+25.90034,Log,trial success
+26.90609,Log,From CreateDotMotion: Southeast
+26.90609,Log,Stimulus Direction is: Southeast
+26.90609,Log,Coherence at 0
+27.72513,Log,trial success
+28.7282,Log,From CreateDotMotion: Northeast
+28.7282,Log,Stimulus Direction is: Northeast
+28.7282,Log,Coherence at 0
+29.82377,Log,trial success
+30.82488,Log,From CreateDotMotion: Southeast
+30.82488,Log,Stimulus Direction is: Southeast
+30.82488,Log,Coherence at 0
+31.72908,Log,trial fail
+32.73067,Log,From CreateDotMotion: Northeast
+32.73067,Log,Stimulus Direction is: Northeast
+32.73067,Log,Coherence at 0
+33.39582,Log,trial success
+34.39777,Log,From CreateDotMotion: Southeast
+34.39777,Log,Stimulus Direction is: Southeast
+34.39777,Log,Coherence at 0

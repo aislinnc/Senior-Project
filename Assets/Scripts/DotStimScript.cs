@@ -37,15 +37,10 @@ public class DotStimScript : MonoBehaviour {
         experiment = GameObject.FindGameObjectWithTag("Experiment");
         experimentGenerator = experiment.GetComponent<ExperimentGenerator>();
         dotSession = experimentGenerator.session;
-    }
-    
-    public void Start()
-    {       
-        /*
-        uxf_rig = GameObject.Find("UXF_Rig");
-        sessionLogger = uxf_rig.GetComponent<SessionLogger>();
-        dotSession = sessionLogger.session;
-        */
+
+        // Added by Aislinn
+        stim_directionH = Random.Range(0,2);
+        stim_directionV = Random.Range(0,2);
 
         //stim_direction = Random.Range(0, 2);
         if (stim_directionH == 0 && stim_directionV == 0)
@@ -64,10 +59,11 @@ public class DotStimScript : MonoBehaviour {
         {
             combined_direction = "Southwest";
         }
-
-        
-
-        Debug.Log("Stimulus Direction is: " + combined_direction);
+    }
+    
+    public void Start()
+    {       
+        //Debug.Log("Stimulus Direction is: " + combined_direction);
         num_dots = Mathf.RoundToInt(Mathf.Pow(dotSession.settings.GetFloat("ApertureRad"), 2f) * Mathf.PI * dotSession.settings.GetFloat("Density"));
 
         num_noise = (int)(num_dots * dotSession.settings.GetInt("PctNoiseDots") / 100);
@@ -77,7 +73,7 @@ public class DotStimScript : MonoBehaviour {
         ap_rad_units = ((dotSession.settings.GetFloat("ApertureRad") * Mathf.PI) / (180)) * dotSession.settings.GetFloat("StimDepth");
         dots = new List<GameObject>();
         stim_start_time = Time.realtimeSinceStartup;
-        Debug.Log("Coherence at " + max_angle);
+        //Debug.Log("Coherence at " + max_angle);
 
         if (!dotSession.settings.GetBool("BalanceNoise"))
         {
@@ -180,7 +176,7 @@ public class DotStimScript : MonoBehaviour {
 
                 if (stim_directionH == 1)
                 {
-                    Debug.Log(i.ToString());
+                    //Debug.Log(i.ToString());
                     dot.GetComponent<DotMotion>().movement_angle = Quaternion.AngleAxis(DeterministicAngles[i], Vector3.up);
                     dot.GetComponent<DotMotion>().pretty_movement_angle = DeterministicAngles[i];
 

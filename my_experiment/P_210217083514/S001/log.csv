@@ -1,0 +1,14 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.348858,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+4.29435,Log,trial success
+4.29435,Log,maxLevel: 3
+4.29435,Log,nextLevel: 1
+6.34958,Log,trial success
+6.34958,Log,maxLevel: 3
+6.34958,Log,nextLevel: 1
+8.223004,Log,trial success
+8.223004,Log,maxLevel: 3
+8.223004,Log,sameLevel: True
+8.223004,Log,successful: True
+8.223004,Log,nextLevel: 1
