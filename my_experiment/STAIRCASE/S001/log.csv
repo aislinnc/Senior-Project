@@ -1,0 +1,24 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+8.707074,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+10.73658,Log,trial success
+12.65973,Log,trial success
+14.53066,Log,trial success
+16.47476,Log,trial success
+18.35498,Log,trial success
+20.36948,Log,trial fail
+22.29639,Log,trial success
+24.1891,Log,trial success
+26.16774,Log,trial success
+28.05359,Log,trial success
+30.07857,Log,trial success
+32.10563,Log,trial fail
+34.05178,Log,trial success
+36.08836,Log,trial success
+38.06602,Log,trial success
+39.99239,Log,trial success
+41.92003,Log,trial success
+43.81642,Log,trial success
+45.69898,Log,trial success
+47.76382,Log,trial success
+49.63737,Log,trial success

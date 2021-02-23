@@ -9,6 +9,8 @@ public class DotStimScript : MonoBehaviour {
     public Session dotSession;
     public GameObject experiment;
     public ExperimentGenerator experimentGenerator;
+    public CreateDotMotion createDotMotion;
+    public int currentLevel;
     /*
     public Session dotSession;
     public GameObject uxf_rig;
@@ -38,7 +40,11 @@ public class DotStimScript : MonoBehaviour {
         experimentGenerator = experiment.GetComponent<ExperimentGenerator>();
         dotSession = experimentGenerator.session;
 
-        // Added by Aislinn
+        // Added by Aislinn to change angle with difficulty
+        createDotMotion = experiment.GetComponent<CreateDotMotion>();
+        currentLevel = createDotMotion.level;
+
+        // Added by Aislinn to set direction
         stim_directionH = Random.Range(0,2);
         stim_directionV = Random.Range(0,2);
 

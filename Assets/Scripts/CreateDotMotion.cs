@@ -15,7 +15,7 @@ public class CreateDotMotion : MonoBehaviour
     public bool stimActive;
     public GameObject experiment;
     public GetKeyPress getKeyPress;
-    private int level;
+    public int level;
 
     public void Start(){
         stimActive = true;
@@ -58,7 +58,6 @@ public class CreateDotMotion : MonoBehaviour
         
         // Destroy it
         Destroy(instStim);
-        //instStim.SetActive(false);
         stimActive = false;
     }
 }
