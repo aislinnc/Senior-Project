@@ -1,0 +1,7 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.343807,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+4.286961,Log,trial success
+4.286961,Log,nextLevel: 1
+6.053767,Log,trial fail
+6.053767,Log,nextLevel: 1

@@ -1,5 +1,0 @@
-timestamp,log_type,message
-0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project Participant Data\participant_list.csv
-3.098261,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project Participant Data\participant_list.csv
-4.038611,Warning,Warning: Session already exists! Continuing will overwrite
-4.038611,Log,Experiment generator is working!

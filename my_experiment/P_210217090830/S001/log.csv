@@ -1,0 +1,79 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+1.757658,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+3.734197,Log,trial success
+3.734197,Log,nextLevel outside of loop: 1
+5.63334,Log,trial success
+5.63334,Log,nextLevel outside of loop: 1
+7.478419,Log,trial success
+7.478419,Log,sameLevel: True
+7.478419,Log,successful: True
+7.478419,Log,IN HERE
+7.478419,Log,nextLevel: 1
+7.478419,Log,nextLevel outside of loop: 1
+9.426396,Log,trial success
+9.426396,Log,sameLevel: True
+9.426396,Log,successful: True
+9.426396,Log,IN HERE
+9.426396,Log,nextLevel: 1
+9.426396,Log,nextLevel outside of loop: 1
+11.25783,Log,trial success
+11.25783,Log,sameLevel: True
+11.25783,Log,successful: True
+11.25783,Log,IN HERE
+11.25783,Log,nextLevel: 1
+11.25783,Log,nextLevel outside of loop: 1
+13.06593,Log,trial success
+13.06593,Log,sameLevel: True
+13.06593,Log,successful: True
+13.06593,Log,IN HERE
+13.06593,Log,nextLevel: 1
+13.06593,Log,nextLevel outside of loop: 1
+14.92601,Log,trial success
+14.92601,Log,sameLevel: True
+14.92601,Log,successful: True
+14.92601,Log,IN HERE
+14.92601,Log,nextLevel: 1
+14.92601,Log,nextLevel outside of loop: 1
+16.81552,Log,trial success
+16.81552,Log,sameLevel: True
+16.81552,Log,successful: True
+16.81552,Log,IN HERE
+16.81552,Log,nextLevel: 1
+16.81552,Log,nextLevel outside of loop: 1
+18.6265,Log,trial success
+18.6265,Log,sameLevel: True
+18.6265,Log,successful: True
+18.6265,Log,IN HERE
+18.6265,Log,nextLevel: 1
+18.6265,Log,nextLevel outside of loop: 1
+20.51997,Log,trial success
+20.51997,Log,sameLevel: True
+20.51997,Log,successful: True
+20.51997,Log,IN HERE
+20.51997,Log,nextLevel: 1
+20.51997,Log,nextLevel outside of loop: 1
+22.60486,Log,trial success
+22.60486,Log,sameLevel: True
+22.60486,Log,successful: True
+22.60486,Log,IN HERE
+22.60486,Log,nextLevel: 1
+22.60486,Log,nextLevel outside of loop: 1
+24.61302,Log,trial success
+24.61302,Log,sameLevel: True
+24.61302,Log,successful: True
+24.61302,Log,IN HERE
+24.61302,Log,nextLevel: 1
+24.61302,Log,nextLevel outside of loop: 1
+26.46324,Log,trial success
+26.46324,Log,sameLevel: True
+26.46324,Log,successful: True
+26.46324,Log,IN HERE
+26.46324,Log,nextLevel: 1
+26.46324,Log,nextLevel outside of loop: 1
+28.35278,Log,trial success
+28.35278,Log,sameLevel: True
+28.35278,Log,successful: True
+28.35278,Log,IN HERE
+28.35278,Log,nextLevel: 1
+28.35278,Log,nextLevel outside of loop: 1

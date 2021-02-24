@@ -6,18 +6,15 @@ using UXF;
 public class FixationController : MonoBehaviour
 {   
     public Session session;
-    private float fixationTime;
 
     // Activates the fixation point for 1 second then deactivates it 
     IEnumerator Fixate(){
-        Debug.Log("In Fixate coroutine");
-        yield return new WaitForSeconds(fixationTime);
+        yield return new WaitForSeconds(session.settings.GetFloat("fixationTime"));
         gameObject.SetActive(false);
     }
 
     // Starts the Fixate coroutine
     public void StartFixate(){
-        fixationTime = session.settings.GetFloat("fixationTime");
         StartCoroutine(Fixate());
     }
 }

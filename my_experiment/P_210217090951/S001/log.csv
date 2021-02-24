@@ -1,0 +1,42 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+1.850174,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+3.716521,Log,trial success
+3.716521,Log,nextLevel outside of loop: 1
+5.684125,Log,trial success
+5.684125,Log,nextLevel outside of loop: 1
+7.632535,Log,trial success
+7.632535,Log,sameLevel: True
+7.632535,Log,successful: True
+7.632535,Log,IN HERE
+7.632535,Log,currentLevel: 1
+7.632535,Log,nextLevel: 2
+7.632535,Log,nextLevel outside of loop: 2
+9.533746,Log,trial success
+9.533746,Log,sameLevel: False
+9.533746,Log,successful: True
+9.533746,Log,nextLevel outside of loop: 2
+11.49329,Log,trial success
+11.49329,Log,sameLevel: False
+11.49329,Log,successful: True
+11.49329,Log,nextLevel outside of loop: 2
+13.47672,Log,trial success
+13.47672,Log,sameLevel: True
+13.47672,Log,successful: True
+13.47672,Log,IN HERE
+13.47672,Log,currentLevel: 2
+13.47672,Log,nextLevel: 3
+13.47672,Log,nextLevel outside of loop: 3
+15.4195,Log,trial success
+15.4195,Log,sameLevel: False
+15.4195,Log,successful: True
+15.4195,Log,nextLevel outside of loop: 3
+17.24003,Log,trial success
+17.24003,Log,sameLevel: False
+17.24003,Log,successful: True
+17.24003,Log,nextLevel outside of loop: 3
+19.06631,Log,trial success
+19.06631,Log,sameLevel: True
+19.06631,Log,successful: True
+19.06631,Log,IN HERE
+19.06631,Log,nextLevel outside of loop: 3

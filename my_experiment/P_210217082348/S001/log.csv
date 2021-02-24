@@ -1,0 +1,338 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+1.664675,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.672649,Log,From CreateDotMotion: Southeast
+2.672649,Log,Stimulus Direction is: Southeast
+2.672649,Log,Coherence at 0
+3.648305,Log,trial success
+3.648305,Log,In DifficultyAdjuster
+3.648305,Log,currentLevel: 1
+3.648305,Log,nextLevel: 1
+4.648675,Log,From CreateDotMotion: Northwest
+4.648675,Log,Stimulus Direction is: Northwest
+4.648675,Log,Coherence at 0
+4.648675,Log,0
+4.648675,Log,1
+4.648675,Log,2
+4.648675,Log,3
+4.648675,Log,4
+4.648675,Log,5
+4.648675,Log,6
+4.648675,Log,7
+4.648675,Log,8
+4.648675,Log,9
+4.648675,Log,10
+4.648675,Log,11
+4.648675,Log,12
+4.648675,Log,13
+4.648675,Log,14
+4.648675,Log,15
+4.648675,Log,16
+4.648675,Log,17
+4.648675,Log,18
+4.648675,Log,19
+4.648675,Log,20
+4.648675,Log,21
+4.648675,Log,22
+4.648675,Log,23
+4.648675,Log,24
+4.648675,Log,25
+4.648675,Log,26
+4.648675,Log,27
+4.648675,Log,28
+4.648675,Log,29
+4.648675,Log,30
+4.648675,Log,31
+4.648675,Log,32
+4.648675,Log,33
+4.648675,Log,34
+4.648675,Log,35
+4.648675,Log,36
+4.648675,Log,37
+4.648675,Log,38
+4.648675,Log,39
+4.648675,Log,40
+4.648675,Log,41
+4.648675,Log,42
+4.648675,Log,43
+4.648675,Log,44
+4.648675,Log,45
+4.648675,Log,46
+4.648675,Log,47
+4.648675,Log,48
+4.648675,Log,49
+4.648675,Log,50
+4.648675,Log,51
+4.648675,Log,52
+4.648675,Log,53
+4.648675,Log,54
+4.648675,Log,55
+4.648675,Log,56
+4.648675,Log,57
+4.648675,Log,58
+4.648675,Log,59
+4.648675,Log,60
+4.648675,Log,61
+4.648675,Log,62
+4.648675,Log,63
+4.648675,Log,64
+4.648675,Log,65
+4.648675,Log,66
+4.648675,Log,67
+4.648675,Log,68
+5.561489,Log,trial fail
+5.561489,Log,In DifficultyAdjuster
+5.561489,Log,currentLevel: 1
+5.561489,Log,nextLevel: 1
+6.566689,Log,From CreateDotMotion: Northeast
+6.566689,Log,Stimulus Direction is: Northeast
+6.566689,Log,Coherence at 0
+7.734855,Log,trial success
+7.734855,Log,In DifficultyAdjuster
+7.734855,Log,currentLevel: 1
+7.734855,Log,nextLevel: 1
+8.737595,Log,From CreateDotMotion: Southwest
+8.737595,Log,Stimulus Direction is: Southwest
+8.737595,Log,Coherence at 0
+8.737595,Log,0
+8.737595,Log,1
+8.737595,Log,2
+8.737595,Log,3
+8.737595,Log,4
+8.737595,Log,5
+8.737595,Log,6
+8.737595,Log,7
+8.737595,Log,8
+8.737595,Log,9
+8.737595,Log,10
+8.737595,Log,11
+8.737595,Log,12
+8.737595,Log,13
+8.737595,Log,14
+8.737595,Log,15
+8.737595,Log,16
+8.737595,Log,17
+8.737595,Log,18
+8.737595,Log,19
+8.737595,Log,20
+8.737595,Log,21
+8.737595,Log,22
+8.737595,Log,23
+8.737595,Log,24
+8.737595,Log,25
+8.737595,Log,26
+8.737595,Log,27
+8.737595,Log,28
+8.737595,Log,29
+8.737595,Log,30
+8.737595,Log,31
+8.737595,Log,32
+8.737595,Log,33
+8.737595,Log,34
+8.737595,Log,35
+8.737595,Log,36
+8.737595,Log,37
+8.737595,Log,38
+8.737595,Log,39
+8.737595,Log,40
+8.737595,Log,41
+8.737595,Log,42
+8.737595,Log,43
+8.737595,Log,44
+8.737595,Log,45
+8.737595,Log,46
+8.737595,Log,47
+8.737595,Log,48
+8.737595,Log,49
+8.737595,Log,50
+8.737595,Log,51
+8.737595,Log,52
+8.737595,Log,53
+8.737595,Log,54
+8.737595,Log,55
+8.737595,Log,56
+8.737595,Log,57
+8.737595,Log,58
+8.737595,Log,59
+8.737595,Log,60
+8.737595,Log,61
+8.737595,Log,62
+8.737595,Log,63
+8.737595,Log,64
+8.737595,Log,65
+8.737595,Log,66
+8.737595,Log,67
+8.737595,Log,68
+9.724902,Log,trial success
+9.724902,Log,In DifficultyAdjuster
+9.724902,Log,currentLevel: 1
+9.724902,Log,nextLevel: 1
+10.72809,Log,From CreateDotMotion: Southeast
+10.72809,Log,Stimulus Direction is: Southeast
+10.72809,Log,Coherence at 0
+11.65727,Log,trial success
+11.65727,Log,In DifficultyAdjuster
+11.65727,Log,currentLevel: 2
+11.65727,Log,nextLevel: 1
+12.66199,Log,From CreateDotMotion: Northeast
+12.66199,Log,Stimulus Direction is: Northeast
+12.66199,Log,Coherence at 0
+13.68264,Log,trial success
+13.68264,Log,In DifficultyAdjuster
+13.68264,Log,currentLevel: 2
+13.68264,Log,nextLevel: 1
+14.6829,Log,From CreateDotMotion: Southwest
+14.6829,Log,Stimulus Direction is: Southwest
+14.6829,Log,Coherence at 0
+14.6829,Log,0
+14.6829,Log,1
+14.6829,Log,2
+14.6829,Log,3
+14.6829,Log,4
+14.6829,Log,5
+14.6829,Log,6
+14.6829,Log,7
+14.6829,Log,8
+14.6829,Log,9
+14.6829,Log,10
+14.6829,Log,11
+14.6829,Log,12
+14.6829,Log,13
+14.6829,Log,14
+14.6829,Log,15
+14.6829,Log,16
+14.6829,Log,17
+14.6829,Log,18
+14.6829,Log,19
+14.6829,Log,20
+14.6829,Log,21
+14.6829,Log,22
+14.6829,Log,23
+14.6829,Log,24
+14.6829,Log,25
+14.6829,Log,26
+14.6829,Log,27
+14.6829,Log,28
+14.6829,Log,29
+14.6829,Log,30
+14.6829,Log,31
+14.6829,Log,32
+14.6829,Log,33
+14.6829,Log,34
+14.6829,Log,35
+14.6829,Log,36
+14.6829,Log,37
+14.6829,Log,38
+14.6829,Log,39
+14.6829,Log,40
+14.6829,Log,41
+14.6829,Log,42
+14.6829,Log,43
+14.6829,Log,44
+14.6829,Log,45
+14.6829,Log,46
+14.6829,Log,47
+14.6829,Log,48
+14.6829,Log,49
+14.6829,Log,50
+14.6829,Log,51
+14.6829,Log,52
+14.6829,Log,53
+14.6829,Log,54
+14.6829,Log,55
+14.6829,Log,56
+14.6829,Log,57
+14.6829,Log,58
+14.6829,Log,59
+14.6829,Log,60
+14.6829,Log,61
+14.6829,Log,62
+14.6829,Log,63
+14.6829,Log,64
+14.6829,Log,65
+14.6829,Log,66
+14.6829,Log,67
+14.6829,Log,68
+15.65155,Log,trial success
+15.65155,Log,In DifficultyAdjuster
+15.65155,Log,currentLevel: 2
+15.65155,Log,nextLevel: 1
+16.65505,Log,From CreateDotMotion: Northeast
+16.65505,Log,Stimulus Direction is: Northeast
+16.65505,Log,Coherence at 0
+17.63427,Log,trial success
+17.63427,Log,In DifficultyAdjuster
+17.63427,Log,currentLevel: 2
+17.63427,Log,nextLevel: 1
+18.63542,Log,From CreateDotMotion: Southwest
+18.63542,Log,Stimulus Direction is: Southwest
+18.63542,Log,Coherence at 0
+18.63542,Log,0
+18.63542,Log,1
+18.63542,Log,2
+18.63542,Log,3
+18.63542,Log,4
+18.63542,Log,5
+18.63542,Log,6
+18.63542,Log,7
+18.63542,Log,8
+18.63542,Log,9
+18.63542,Log,10
+18.63542,Log,11
+18.63542,Log,12
+18.63542,Log,13
+18.63542,Log,14
+18.63542,Log,15
+18.63542,Log,16
+18.63542,Log,17
+18.63542,Log,18
+18.63542,Log,19
+18.63542,Log,20
+18.63542,Log,21
+18.63542,Log,22
+18.63542,Log,23
+18.63542,Log,24
+18.63542,Log,25
+18.63542,Log,26
+18.63542,Log,27
+18.63542,Log,28
+18.63542,Log,29
+18.63542,Log,30
+18.63542,Log,31
+18.63542,Log,32
+18.63542,Log,33
+18.63542,Log,34
+18.63542,Log,35
+18.63542,Log,36
+18.63542,Log,37
+18.63542,Log,38
+18.63542,Log,39
+18.63542,Log,40
+18.63542,Log,41
+18.63542,Log,42
+18.63542,Log,43
+18.63542,Log,44
+18.63542,Log,45
+18.63542,Log,46
+18.63542,Log,47
+18.63542,Log,48
+18.63542,Log,49
+18.63542,Log,50
+18.63542,Log,51
+18.63542,Log,52
+18.63542,Log,53
+18.63542,Log,54
+18.63542,Log,55
+18.63542,Log,56
+18.63542,Log,57
+18.63542,Log,58
+18.63542,Log,59
+18.63542,Log,60
+18.63542,Log,61
+18.63542,Log,62
+18.63542,Log,63
+18.63542,Log,64
+18.63542,Log,65
+18.63542,Log,66
+18.63542,Log,67
+18.63542,Log,68

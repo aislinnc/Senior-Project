@@ -1,0 +1,4 @@
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,outcome,difficulty_level,target_direction,distractor_direction,target_movement_filename,distractor_movement_filename
+my_experiment/P_210217090612/S001,my_experiment,P_210217090612,1,1,1,1,2.343807,4.286961,success,1,Southeast,Northwest,target_movement_T001.csv,distractor_movement_T001.csv
+my_experiment/P_210217090612/S001,my_experiment,P_210217090612,1,2,1,2,4.286961,6.053767,fail,1,Northwest,Southeast,target_movement_T002.csv,distractor_movement_T002.csv
+my_experiment/P_210217090612/S001,my_experiment,P_210217090612,1,3,1,3,6.053767,7.089698,,1,,,target_movement_T003.csv,distractor_movement_T003.csv

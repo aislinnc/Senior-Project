@@ -6,57 +6,59 @@ using UXF;
 public class DistractorController : MonoBehaviour
 {
     public Session distSession;
-    public GameObject uxfRig;
-    public SessionLogger sessionLogger;
-    
-    // FOR USE ONCE DOT MOTION WORKS 
-    public GameObject dotMotion;
-    public DotStimScript dotStimScript;
-    private int horDir;
-    private int verDir;
-    private string combinedDirection;
-
+    public GameObject experiment;
+    public ExperimentGenerator experimentGenerator;
     // Movement
-    public Tracker distractorTracker;
+    public CreateDotMotion createDotMotion;
+    private string combinedDirection;
     private int moveSpeed;
     private Vector3 distDir;
+    private string distDirection;
+    //public Tracker distractorTracker;
 
     void Start(){
-        // Find UXF rig using find game object
-        uxfRig = GameObject.Find("UXF_Rig");
-        // use get component to get the script called session 
-        sessionLogger = uxfRig.GetComponent<SessionLogger>();
-        distSession = sessionLogger.session;
-
-        // FOR USE ONCE DOT MOTION WORKS 
-        // Get the combined direction of the stimulus dots
-        dotMotion = GameObject.Find("DotStimulus");
-        dotStimScript = dotMotion.GetComponent<DotStimScript>();
-        combinedDirection = dotStimScript.combined_direction;
+        // Get session
+        experiment = GameObject.FindGameObjectWithTag("Experiment");
+        experimentGenerator = experiment.GetComponent<ExperimentGenerator>();
+        distSession = experimentGenerator.session;
+ 
+        // Get the direction of the stimulus dots and go the opposite way
+        createDotMotion = experiment.GetComponent<CreateDotMotion>();
+        combinedDirection = createDotMotion.combined_direction;
 
         // Set the direction and speed the distractor
+        moveSpeed = distSession.settings.GetInt("distractorMoveSpeed");
+        transform.Rotate(90f, 0f, 0f);
         if(combinedDirection == "Northeast"){
             distDir = new Vector3(-1f, -1f, 0f);
+            distDirection = "Southwest";
         }
         else if(combinedDirection == "Southeast"){
             distDir = new Vector3(-1f, 1f, 0f);
+            distDirection = "Northwest";
         }
         else if(combinedDirection == "Northwest"){
             distDir = new Vector3(1f, -1f, 0f);
+            distDirection = "Southeast";
         }
         else{
             distDir = new Vector3(1f, 1f, 0f);
+            distDirection = "Northeast";
         }
-        moveSpeed = distSession.settings.GetInt("distractorMoveSpeed");
 
+        // Log distractor direction
+        distSession.CurrentTrial.result["distractor_direction"] = distDirection; 
+
+        /*
         // Add a tracker of its position
         distSession.trackedObjects.Add(distractorTracker);
         distractorTracker.StartRecording();
+        */
     }
 
     void Update()
     {
         // Send the distractor in the opposite direction of the target
-        transform.Translate(distDir*moveSpeed*Time.deltaTime);
+        transform.Translate(distDir*moveSpeed*Time.deltaTime, Space.World);
     }
 }

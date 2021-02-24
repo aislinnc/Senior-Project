@@ -1,4 +1,0 @@
-timestamp,log_type,message
-0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-7.53468,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-7.53468,Error,System.Collections.Generic.List`1[UXF.Block]

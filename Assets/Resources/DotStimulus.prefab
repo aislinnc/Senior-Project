@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 33232219680112378}
   - component: {fileID: 136421950228150316}
   - component: {fileID: 23595270301750780}
-  - component: {fileID: 8805757909435069821}
-  - component: {fileID: 6856036135290107570}
+  - component: {fileID: 632939862042752327}
+  - component: {fileID: 8533257590199514670}
   m_Layer: 0
   m_Name: DotStimulus
-  m_TagString: Untagged
+  m_TagString: DotStimulus
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1834260098178468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.01, z: 1}
+  m_LocalScale: {x: 1, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,8 +74,7 @@ MeshRenderer:
   m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
+  m_Materials: []
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +95,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8805757909435069821
+--- !u!114 &632939862042752327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,10 +104,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1834260098178468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f4e15d736773694facc57f6bbe02aeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 71196130f9076e04ca4c8bdf6c5a82fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6856036135290107570
+  dotSession: {fileID: 0}
+  experiment: {fileID: 0}
+  experimentGenerator: {fileID: 0}
+  num_dots: 0
+  num_noise: 0
+  num_signal: 0
+  dot_diam_units: 0
+  ap_rad_units: 0
+  stim_directionH: 0
+  stim_directionV: 0
+  combined_direction: 
+  max_angle: 0
+  draw_time: 0
+  wait_time: 0
+  stim_start_time: 0
+  DeterministicAngles: []
+--- !u!114 &8533257590199514670
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,6 +132,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1834260098178468}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e88015766540264caaa8208a36299ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 8369fcb3eeb08a8458b9637f0485fe9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

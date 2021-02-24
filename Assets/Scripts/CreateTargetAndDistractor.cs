@@ -6,28 +6,33 @@ using UXF;
 public class CreateTargetAndDistractor : MonoBehaviour
 {
     public Session session;
-    public GameObject stim;
     public GameObject targetPrefab;
     public GameObject distractorPrefab;
+    public GameObject parent;
+    public GameObject target;
+    public GameObject distractor;
     private List<float> posList;
     private Vector3 pos;
-    private bool instantiated; //To make sure prefabs are only instantiated once 
+    private float waitTime;
 
-    void Start()
+    public void CreateTargetAndDistractorObjects()
     {
-        // Set target starting location to dot stimulus location
+        // Set postition to position of dot motion
         posList = session.settings.GetFloatList("stimulusLocation");
         pos =  new Vector3(posList[0], posList[1], posList[2]);
-        instantiated = false;
-        stim = GameObject.Find("DotStimulus");
+
+        // How long it takes for fixation and dot motion to dissapear
+        waitTime = session.settings.GetFloat("fixationTime") + session.settings.GetFloat("stimulusTime");
+
+        StartCoroutine(TargetAndDistractorCoroutine());
     }
 
-    void Update()
-    {
-        if(stim.activeInHierarchy == false && instantiated == false){
-            Instantiate(targetPrefab, pos, Quaternion.identity);
-            Instantiate(distractorPrefab, pos, Quaternion.identity);
-            instantiated = true;
-        }
+    IEnumerator TargetAndDistractorCoroutine(){
+        // Wait for dot motion to dissapear 
+        yield return new WaitForSeconds(waitTime);
+
+        // Instantiate target and distractor prefavs
+        Instantiate(targetPrefab, pos, Quaternion.identity);
+        Instantiate(distractorPrefab, pos, Quaternion.identity);
     }
 }

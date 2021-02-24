@@ -1,5 +1,0 @@
-timestamp,log_type,message
-0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-1.901446,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
-6.054708,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial
-6.945255,Exception,NoSuchTrialException: There is no trial zero. If you are the start of the experiment please use NextTrial to get the first trial

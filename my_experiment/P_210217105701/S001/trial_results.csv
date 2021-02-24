@@ -1,0 +1,16 @@
+directory,experiment,ppid,session_num,trial_num,block_num,trial_num_in_block,start_time,end_time,outcome,difficulty_level,target_direction,distractor_direction,target_movement_filename,distractor_movement_filename
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,1,1,1,1.833984,3.76014,success,1,Northwest,Southeast,target_movement_T001.csv,distractor_movement_T001.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,2,1,2,3.76014,5.638079,success,1,Southwest,Northeast,target_movement_T002.csv,distractor_movement_T002.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,3,1,3,5.638079,7.606095,success,1,Southwest,Northeast,target_movement_T003.csv,distractor_movement_T003.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,4,1,4,7.606095,9.476781,success,2,Southeast,Northwest,target_movement_T004.csv,distractor_movement_T004.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,5,1,5,9.476781,22.53804,fail,2,Northeast,Southwest,target_movement_T005.csv,distractor_movement_T005.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,6,1,6,22.53804,24.6097,success,1,Northwest,Southeast,target_movement_T006.csv,distractor_movement_T006.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,7,1,7,24.6097,26.54032,success,1,Southwest,Northeast,target_movement_T007.csv,distractor_movement_T007.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,8,1,8,26.54032,28.46336,success,1,Northeast,Southwest,target_movement_T008.csv,distractor_movement_T008.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,9,1,9,28.46336,30.36518,success,2,Southwest,Northeast,target_movement_T009.csv,distractor_movement_T009.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,10,1,10,30.36518,32.50665,success,2,Northeast,Southwest,target_movement_T010.csv,distractor_movement_T010.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,11,1,11,32.50665,34.48182,success,2,Northwest,Southeast,target_movement_T011.csv,distractor_movement_T011.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,12,1,12,34.48182,36.33558,success,3,Southeast,Northwest,target_movement_T012.csv,distractor_movement_T012.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,13,1,13,36.33558,38.46342,success,3,Southwest,Northeast,target_movement_T013.csv,distractor_movement_T013.csv
+my_experiment/P_210217105701/S001,my_experiment,P_210217105701,1,14,1,14,38.46342,40.56907,success,3,Southwest,Northeast,target_movement_T014.csv,distractor_movement_T014.csv
+

@@ -1,0 +1,16 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.114279,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+3.118389,Log,From CreateDotMotion: Northeast
+3.118389,Log,Stimulus Direction is: Northeast
+3.118389,Log,Coherence at 0
+4.095649,Log,trial success
+4.095649,Log,In DifficultyAdjuster
+5.096456,Log,From CreateDotMotion: Southeast
+5.096456,Log,Stimulus Direction is: Southeast
+5.096456,Log,Coherence at 0
+6.045065,Log,trial success
+6.045065,Log,In DifficultyAdjuster
+7.049901,Log,From CreateDotMotion: Northeast
+7.049901,Log,Stimulus Direction is: Northeast
+7.049901,Log,Coherence at 0

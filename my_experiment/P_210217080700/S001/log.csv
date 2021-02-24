@@ -1,0 +1,87 @@
+timestamp,log_type,message
+0,Log,Loaded: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+2.327642,Log,Updating: C:\Users\aisli\OneDrive\Documents\GitHub\Senior Project\Senior-Project\participant_list.csv
+3.328072,Log,From CreateDotMotion: Southeast
+3.328072,Log,Stimulus Direction is: Southeast
+3.328072,Log,Coherence at 0
+6.574866,Log,trial success
+7.575086,Log,From CreateDotMotion: Northeast
+7.575086,Log,Stimulus Direction is: Northeast
+7.575086,Log,Coherence at 0
+9.473918,Log,trial success
+10.4742,Log,From CreateDotMotion: Northwest
+10.4742,Log,Stimulus Direction is: Northwest
+10.4742,Log,Coherence at 0
+10.4742,Log,0
+10.4742,Log,1
+10.4742,Log,2
+10.4742,Log,3
+10.4742,Log,4
+10.4742,Log,5
+10.4742,Log,6
+10.4742,Log,7
+10.4742,Log,8
+10.4742,Log,9
+10.4742,Log,10
+10.4742,Log,11
+10.4742,Log,12
+10.4742,Log,13
+10.4742,Log,14
+10.4742,Log,15
+10.4742,Log,16
+10.4742,Log,17
+10.4742,Log,18
+10.4742,Log,19
+10.4742,Log,20
+10.4742,Log,21
+10.4742,Log,22
+10.4742,Log,23
+10.4742,Log,24
+10.4742,Log,25
+10.4742,Log,26
+10.4742,Log,27
+10.4742,Log,28
+10.4742,Log,29
+10.4742,Log,30
+10.4742,Log,31
+10.4742,Log,32
+10.4742,Log,33
+10.4742,Log,34
+10.4742,Log,35
+10.4742,Log,36
+10.4742,Log,37
+10.4742,Log,38
+10.4742,Log,39
+10.4742,Log,40
+10.4742,Log,41
+10.4742,Log,42
+10.4742,Log,43
+10.4742,Log,44
+10.4742,Log,45
+10.4742,Log,46
+10.4742,Log,47
+10.4742,Log,48
+10.4742,Log,49
+10.4742,Log,50
+10.4742,Log,51
+10.4742,Log,52
+10.4742,Log,53
+10.4742,Log,54
+10.4742,Log,55
+10.4742,Log,56
+10.4742,Log,57
+10.4742,Log,58
+10.4742,Log,59
+10.4742,Log,60
+10.4742,Log,61
+10.4742,Log,62
+10.4742,Log,63
+10.4742,Log,64
+10.4742,Log,65
+10.4742,Log,66
+10.4742,Log,67
+10.4742,Log,68
+11.63762,Log,trial success
+12.63918,Log,From CreateDotMotion: Northeast
+12.63918,Log,Stimulus Direction is: Northeast
+12.63918,Log,Coherence at 0
