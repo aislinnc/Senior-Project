@@ -34,10 +34,14 @@ public class GetKeyPress : MonoBehaviour
     public void Update()
     {   
         // Doesn't register key presses until stimulus is gone
+<<<<<<< Updated upstream
         if(createDotMotion.stimActive == false){
             // Get the combined direction of the dot motion
             combined_direction = createDotMotion.combined_direction;
             
+=======
+        //if(stim.activeInHierarchy == false){
+>>>>>>> Stashed changes
             // If the left arrow key was pressed 
             if(Input.GetKeyDown(KeyCode.LeftArrow)){
                 // If it was the right key to press
@@ -61,8 +65,22 @@ public class GetKeyPress : MonoBehaviour
                     EndTrial();
                 }
             }
+<<<<<<< Updated upstream
         }
     }
+=======
+            // If neither key was pressed
+            else{
+                keyPressed = false;
+            }
+        //}
+        
+        // If a key was pressed end the current trial and start a new one 
+        if(keyPressed == true){
+            // Stop target and distractor controller
+            targetController.targetTracker.StopRecording();
+            distractorController.distractorTracker.StopRecording();
+>>>>>>> Stashed changes
 
     public void EndTrial(){
         /*

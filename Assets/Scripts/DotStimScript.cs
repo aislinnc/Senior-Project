@@ -5,6 +5,7 @@ using UXF;
 
 
 public class DotStimScript : MonoBehaviour {
+<<<<<<< Updated upstream
     // Added by Aislinn to get session    
     public Session dotSession;
     public GameObject experiment;
@@ -17,6 +18,8 @@ public class DotStimScript : MonoBehaviour {
     public SessionLogger sessionLogger;
     */
     
+=======
+>>>>>>> Stashed changes
     //When the dot stimulus is instantiated, it calls this to create all the dots it needs as children and set them moving.
     public int num_dots;
     public int num_noise;
@@ -34,6 +37,7 @@ public class DotStimScript : MonoBehaviour {
 
     List<GameObject> dots;
 
+<<<<<<< Updated upstream
     public void Awake(){
         // Added by Aislinn to get session 
         experiment = GameObject.FindGameObjectWithTag("Experiment");
@@ -47,6 +51,19 @@ public class DotStimScript : MonoBehaviour {
         // Added by Aislinn to set direction
         stim_directionH = Random.Range(0,2);
         stim_directionV = Random.Range(0,2);
+=======
+    // Added by Aislinn to get session
+    public Session dotSession;
+    public GameObject uxfRig;
+    public SessionLogger sessionLogger;
+
+    void Start()
+    {
+        // Added by Aislinn to get session
+        uxfRig = GameObject.Find("UXF_Rig");
+        sessionLogger = uxfRig.GetComponent<SessionLogger>();
+        dotSession = sessionLogger.session;
+>>>>>>> Stashed changes
 
         //stim_direction = Random.Range(0, 2);
         if (stim_directionH == 0 && stim_directionV == 0)
@@ -72,6 +89,14 @@ public class DotStimScript : MonoBehaviour {
         //Debug.Log("Stimulus Direction is: " + combined_direction);
         num_dots = Mathf.RoundToInt(Mathf.Pow(dotSession.settings.GetFloat("ApertureRad"), 2f) * Mathf.PI * dotSession.settings.GetFloat("Density"));
 
+<<<<<<< Updated upstream
+=======
+        
+
+        Debug.Log("Stimulus Direction is: " + combined_direction);
+        num_dots = Mathf.RoundToInt(Mathf.Pow(dotSession.settings.GetFloat("ApertureRad"), 2f) * Mathf.PI * dotSession.settings.GetFloat("Density"));
+
+>>>>>>> Stashed changes
         num_noise = (int)(num_dots * dotSession.settings.GetInt("PctNoiseDots") / 100);
         num_signal = (int)(num_dots * (1 - (dotSession.settings.GetInt("PctNoiseDots") / 100)));
 

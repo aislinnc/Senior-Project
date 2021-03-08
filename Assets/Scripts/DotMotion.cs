@@ -23,6 +23,7 @@ public class DotMotion : MonoBehaviour {
 
     // Added by Aislinn to get session
     public Session dotSession;
+<<<<<<< Updated upstream
     public GameObject experiment;
     public ExperimentGenerator experimentGenerator;
     // Added by Aislinn to get stim_start_time from DotStimScript
@@ -38,19 +39,37 @@ public class DotMotion : MonoBehaviour {
         // Added by Aislinn to get stim_start_time from DotStimScript
         dotStimulus = GameObject.FindGameObjectWithTag("DotStimulus");
         dotStimScript = dotStimulus.GetComponent<DotStimScript>();
+=======
+    public GameObject uxfRig;
+    public SessionLogger sessionLogger;
+
+	void Start () {
+        // Added by Aislinn to get session
+        uxfRig = GameObject.Find("UXF_Rig");
+        sessionLogger = uxfRig.GetComponent<SessionLogger>();
+        dotSession = sessionLogger.session;
+>>>>>>> Stashed changes
 
         speedApertureUnits = dotSession.settings.GetInt("DotSpeed")/(2*dotSession.settings.GetFloat("ApertureRad"));// Aperture has scaled radius of 1 here, need to scale speed to use with local position
 
         if (current_directionH == 1 && !isNoise) // "right opening" movement wedge (use for motion with leftward component)
         {
+<<<<<<< Updated upstream
             if (!dotSession.settings.GetBool("DeterministicSignal")) { movement_angle = Quaternion.AngleAxis(-Random.Range(-current_angle / 2, current_angle / 2), Vector3.up); }
+=======
+            if (!dotSession.settings.GetBool("DeterminsticSignal")) { movement_angle = Quaternion.AngleAxis(-Random.Range(-current_angle / 2, current_angle / 2), Vector3.up); }
+>>>>>>> Stashed changes
             
             transform.localRotation = Quaternion.identity * movement_angle;
             //Debug.Log("movement angle is " + movement_angle.eulerAngles);
         }
         if( current_directionH != 1 && ! isNoise) // "left opening" movement wedge (use for motion with rightward component)
         {
+<<<<<<< Updated upstream
             if (!dotSession.settings.GetBool("DeterministicSignal"))
+=======
+            if (!dotSession.settings.GetBool("DeterminsticSignal"))
+>>>>>>> Stashed changes
             { movement_angle = Quaternion.AngleAxis(Random.Range(-current_angle / 2, current_angle / 2), Vector3.up); }
             transform.localRotation = Quaternion.identity * movement_angle;
            // Debug.Log("movement angle is " + movement_angle.eulerAngles);
@@ -76,8 +95,11 @@ public class DotMotion : MonoBehaviour {
 
 	void Update () {
         
+<<<<<<< Updated upstream
         start_of_stimulus = dotStimScript.stim_start_time; // AISLINN ADDED 
 
+=======
+>>>>>>> Stashed changes
         if ((Time.realtimeSinceStartup) < dotSession.settings.GetFloat("Duration") + start_of_stimulus)
         {
             gameObject.SetActive(true);
