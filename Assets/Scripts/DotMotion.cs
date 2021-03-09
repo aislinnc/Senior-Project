@@ -28,6 +28,11 @@ public class DotMotion : MonoBehaviour {
     // Added by Aislinn to get stim_start_time from DotStimScript
     public GameObject dotStimulus;
     public DotStimScript dotStimScript;
+    // Added by Aislinn to set location
+    public GameObject headCamera;
+    private List<int> stimLocList;
+    private Quaternion stimLoc;
+    private float stimDepth;
     
 	void Start () 
     {
@@ -35,9 +40,17 @@ public class DotMotion : MonoBehaviour {
         experiment = GameObject.FindGameObjectWithTag("Experiment");
         experimentGenerator = experiment.GetComponent<ExperimentGenerator>();
         dotSession = experimentGenerator.session;
+        
         // Added by Aislinn to get stim_start_time from DotStimScript
         dotStimulus = GameObject.FindGameObjectWithTag("DotStimulus");
         dotStimScript = dotStimulus.GetComponent<DotStimScript>();
+
+        // Added by Aislinn to put stimulus in right location
+        headCamera = GameObject.FindGameObjectWithTag("Camera");
+        transform.SetParent(headCamera.transform);
+        stimLocList = dotSession.settings.GetIntList("stimulusLocation");
+        stimLoc = Quaternion.Euler(stimLocList[0], stimLocList[1], stimLocList[2]);
+        stimDepth = dotSession.settings.GetFloat("StimDepth");
 
         speedApertureUnits = dotSession.settings.GetInt("DotSpeed")/(2*dotSession.settings.GetFloat("ApertureRad"));// Aperture has scaled radius of 1 here, need to scale speed to use with local position
 
@@ -75,7 +88,9 @@ public class DotMotion : MonoBehaviour {
 
 
 	void Update () {
-        
+        // Added by Aislinn to update position
+        transform.localPosition = stimLoc * Vector3.forward * stimDepth;
+
         start_of_stimulus = dotStimScript.stim_start_time; // AISLINN ADDED 
 
         if ((Time.realtimeSinceStartup) < dotSession.settings.GetFloat("Duration") + start_of_stimulus)

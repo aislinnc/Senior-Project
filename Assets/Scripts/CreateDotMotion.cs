@@ -16,9 +16,20 @@ public class CreateDotMotion : MonoBehaviour
     public GameObject experiment;
     public GetKeyPress getKeyPress;
     public int level;
+    public GameObject headCamera;
+    private List<int> stimLocList;
+    private Quaternion stimLoc;
+    private float stimDepth;
+    
 
     public void Start(){
         stimActive = true;
+
+        // For initial location
+        headCamera = GameObject.FindGameObjectWithTag("Camera");
+        stimLocList = session.settings.GetIntList("stimulusLocation");
+        stimLoc = Quaternion.Euler(stimLocList[0], stimLocList[1], stimLocList[2]);
+        stimDepth = session.settings.GetFloat("StimDepth");
     }
     
     public void CreateDotMotionStimulus(){
