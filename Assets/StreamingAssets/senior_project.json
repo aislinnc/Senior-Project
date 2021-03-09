@@ -5,6 +5,7 @@
     "targetMoveSpeed": 4,
     "distractorMoveSpeed": 4,
     "difficultyLevels": 10,
+    "fixationLocation": [10, 0, 0],
 
     "ApertureRad": 2.5,
     "PctNoiseDots": 50,
