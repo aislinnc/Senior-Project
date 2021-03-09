@@ -6,6 +6,10 @@ using UXF;
 public class FixationController : MonoBehaviour
 {   
     public Session session;
+    
+    void Start(){
+        
+    }
 
     // Activates the fixation point for 1 second then deactivates it 
     IEnumerator Fixate(){
@@ -16,5 +20,9 @@ public class FixationController : MonoBehaviour
     // Starts the Fixate coroutine
     public void StartFixate(){
         StartCoroutine(Fixate());
+    }
+
+    void Update(){
+        //if(gameObject.)
     }
 }
