@@ -20,7 +20,6 @@ public class CreateDotMotion : MonoBehaviour
     private List<int> stimLocList;
     private Quaternion stimLoc;
     private float stimDepth;
-    
 
     public void Start(){
         stimActive = true;

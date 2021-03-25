@@ -34,6 +34,7 @@ public class DotMotion : MonoBehaviour {
     private Quaternion stimLoc;
     private float stimDepth;
     
+    
 	void Start () 
     {
         // Added by Aislinn to get session

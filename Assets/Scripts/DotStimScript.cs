@@ -16,6 +16,8 @@ public class DotStimScript : MonoBehaviour {
     public GameObject uxf_rig;
     public SessionLogger sessionLogger;
     */
+    private List<int> stimLocList;
+    private string stimPosSt;
     
     //When the dot stimulus is instantiated, it calls this to create all the dots it needs as children and set them moving.
     public int num_dots;
@@ -25,6 +27,7 @@ public class DotStimScript : MonoBehaviour {
     public float ap_rad_units;
     public int stim_directionH;
     public int stim_directionV;
+    public int stim_direction;
     public string combined_direction;
     public float max_angle;
     public float draw_time;
@@ -44,10 +47,62 @@ public class DotStimScript : MonoBehaviour {
         createDotMotion = experiment.GetComponent<CreateDotMotion>();
         currentLevel = createDotMotion.level;
 
-        // Added by Aislinn to set direction
-        stim_directionH = Random.Range(0,2);
-        stim_directionV = Random.Range(0,2);
+        // Added by Aislinn to get the dots to go in a tangential direction
+        stimLocList = dotSession.settings.GetIntList("stimulusLocation");
+        if(stimLocList[1] == 45){
+            stimPosSt = "upperRight";
+        }
+        else if(stimLocList[1] == 135){
+            stimPosSt = "lowerRight";
+        }
+        else if(stimLocList[1] == 225){
+            stimPosSt = "lowerLeft";
+        }
+        else{
+            stimPosSt = "upperLeft";
+        }
 
+        /*
+        // Added by Aislinn to set direction
+        stim_directionH = Random.Range(0,1);
+        stim_directionV = Random.Range(0,1);
+        */
+        stim_direction = Random.Range(0,1);
+
+        if(stimPosSt == "upperRight"){
+            if(stim_direction == 0){
+                combined_direction = "Northwest";
+            }
+            else{
+                combined_direction = "Southeast";
+            }
+        }
+        else if(stimPosSt == "lowerRight"){
+            if(stim_direction == 0){
+                combined_direction = "Northeast";
+            }
+            else{
+                combined_direction = "Southwest";
+            }
+        }
+        else if(stimPosSt == "lowerLeft"){
+            if(stim_direction == 0){
+                combined_direction = "Northwest";
+            }
+            else{
+                combined_direction = "Southeast";
+            }
+        }
+        else{
+            if(stim_direction == 0){
+                combined_direction = "Northeast";
+            }
+            else{
+                combined_direction = "Southwest";
+            }
+        }
+
+        /*
         //stim_direction = Random.Range(0, 2);
         if (stim_directionH == 0 && stim_directionV == 0)
         {
@@ -65,6 +120,7 @@ public class DotStimScript : MonoBehaviour {
         {
             combined_direction = "Southwest";
         }
+        */
     }
     
     public void Start()

@@ -17,11 +17,16 @@ public class GetKeyPress : MonoBehaviour
     private int maxLevel;
     private bool lastTrial;
     
+    public bool targetEntered;
+    public bool distEntered;
 
     public void Start(){
         // Access the createDotMotionScript
         createDotMotion = GetComponent<CreateDotMotion>();
         lastTrial = false;
+
+        targetEntered = false;
+        distEntered = false;
 
         /*
         // Get the distractor and targets trackers
@@ -32,35 +37,15 @@ public class GetKeyPress : MonoBehaviour
 
     // Update is called once per frame
     public void Update()
-    {   
-        // Doesn't register key presses until stimulus is gone
-        if(createDotMotion.stimActive == false){
-            // Get the combined direction of the dot motion
-            combined_direction = createDotMotion.combined_direction;
-            
-            // If the left arrow key was pressed 
-            if(Input.GetKeyDown(KeyCode.LeftArrow)){
-                // If it was the right key to press
-                if(combined_direction == "Northwest" || combined_direction == "Southwest"){
-                    keySuccess = true;
-                    EndTrial();
-                }
-                // If it was the wrong key
-                else{
-                    keySuccess = false;
-                    EndTrial();
-                }
-            }
-            else if(Input.GetKeyDown(KeyCode.RightArrow)){
-                if(combined_direction == "Northeast" || combined_direction == "Southeast"){
-                    keySuccess = true;
-                    EndTrial();
-                }
-                else{
-                    keySuccess = false;
-                    EndTrial();
-                }
-            }
+    {       
+        // If the target was hit
+        if(targetEntered == true){
+            keySuccess = true;
+            EndTrial();
+        }
+        else if(distEntered == true){
+            keySuccess = false;
+            EndTrial();
         }
     }
 
